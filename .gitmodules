@@ -1,3 +1,6 @@
 [submodule "Regulus"]
 	path = GameProject1-Backend.git/Regulus
 	url = https://github.com/jiowchern/Regulus.git
+[submodule "GameProject1-Backend.git/Regulus"]
+	path = GameProject1-Backend.git/Regulus
+	url = https://github.com/jiowchern/Regulus.git
