@@ -1,0 +1,186 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>RegulusLibrary</name>
+    </assembly>
+    <members>
+        <member name="M:Regulus.Collection.QuadTree`1.#ctor(Regulus.CustomType.Size,System.Int32,System.Boolean)">
+            <summary>
+                Initializes a new instance of the <see cref="T:Regulus.Collection.QuadTree`1" /> class.
+            </summary>
+            <param name="minLeafSize">
+                The smallest size a leaf will split into
+            </param>
+            <param name="maxObjectsPerLeaf">
+                Maximum number of objects per leaf before it forces a split into sub quadrants
+            </param>
+            <param name="sort">
+                Whether or not queries will return objects in the order in which they were added
+            </param>
+        </member>
+        <member name="T:Regulus.Utility.OBB">
+             @author scott.cgi
+             @since  2012-11-19
+              
+             Oriented bounding box 
+        </member>
+        <member name="M:Regulus.Utility.OBB.#ctor">
+            CreateInstnace default OBB
+            
+            @param x Top left x
+            @param y Top left y
+            @param width
+            @param height
+        </member>
+        <member name="M:Regulus.Utility.OBB.getProjectionRadius(System.Single[])">
+            Get axisX and axisY projection radius distance on axis
+        </member>
+        <member name="M:Regulus.Utility.OBB.isCollision(Regulus.Utility.OBB)">
+            OBB is collision with other OBB
+        </member>
+        <member name="M:Regulus.Utility.OBB.dot(System.Single[],System.Single[])">
+            dot-multiply
+        </member>
+        <member name="M:Regulus.Utility.OBB.setRotation(System.Single)">
+            Set axis x and y by rotation
+            
+            @param rotation float 0 - 360 
+        </member>
+        <member name="M:Regulus.Utility.OBB.setLeftTop(System.Single,System.Single)">
+            Set OBB top left x, y
+        </member>
+        <member name="M:Regulus.Utility.SpinWait.NotWindowsPlatform">
+               <summary>for unity web player or not windows system</summary>
+        </member>
+        <member name="P:Regulus.Utility.SpinWait.Count">
+            <summary>获取已对此实例调用 <see cref="M:Regulus.Utility.SpinWait.SpinOnce" /> 的次数。</summary>
+        </member>
+        <member name="P:Regulus.Utility.SpinWait.NextSpinWillYield">
+            <summary>获取对 <see cref="M:Regulus.Utility.SpinWait.SpinOnce" /> 的下一次调用是否将产生处理器，同时触发强制上下文切换。</summary>
+            <returns>对 <see cref="M:Regulus.Utility.SpinWait.SpinOnce" /> 的下一次调用是否将产生处理器，同时触发强制上下文切换。</returns>
+        </member>
+        <member name="M:Regulus.Utility.SpinWait.SpinOnce">
+            <summary>执行单一自旋。</summary>
+        </member>
+        <member name="M:Regulus.Utility.SpinWait.Reset">
+            <summary>重置自旋计数器。</summary>
+        </member>
+        <member name="M:Regulus.Utility.SpinWait.SpinUntil(System.Func{System.Boolean})">
+            <summary>在指定条件得到满足之前自旋。</summary>
+            <param name="condition">在返回 true 之前重复执行的委托。</param>
+            <exception cref="T:System.ArgumentNullException"><paramref name="condition" /> 参数为 null。</exception>
+        </member>
+        <member name="M:Regulus.Utility.SpinWait.SpinUntil(System.Func{System.Boolean},System.TimeSpan)">
+            <summary>在指定条件得到满足或指定超时过期之前自旋。</summary>
+            <returns>如果条件在超时时间内得到满足，则为 true；否则为 false</returns>
+            <param name="condition">在返回 true 之前重复执行的委托。</param>
+            <param name="timeout">一个 <see cref="T:System.TimeSpan" />，表示等待的毫秒数；或者一个 TimeSpan，表示 -1 毫秒（无限期等待）。</param>
+            <exception cref="T:System.ArgumentNullException"><paramref name="condition" /> 参数为 null。</exception>
+            <exception cref="T:System.ArgumentOutOfRangeException">
+                <paramref name="timeout" /> 是 -1 毫秒之外的负数，表示无限超时或者超时大于
+                <see cref="F:System.Int32.MaxValue" />。
+            </exception>
+        </member>
+        <member name="M:Regulus.Utility.SpinWait.SpinUntil(System.Func{System.Boolean},System.Int32)">
+            <summary>在指定条件得到满足或指定超时过期之前自旋。</summary>
+            <returns>如果条件在超时时间内得到满足，则为 true；否则为 false</returns>
+            <param name="condition">在返回 true 之前重复执行的委托。</param>
+            <param name="millisecondsTimeout">等待的毫秒数，或为 <see cref="F:System.Threading.Timeout.Infinite" /> (-1)，表示无限期等待。</param>
+            <exception cref="T:System.ArgumentNullException"><paramref name="condition" /> 参数为 null。</exception>
+            <exception cref="T:System.ArgumentOutOfRangeException">
+                <paramref name="millisecondsTimeout" /> 是一个非 -1 的负数，而 -1
+                表示无限期超时。
+            </exception>
+        </member>
+        <member name="P:Regulus.Utility.Time.Ticks">
+            <summary>
+                目前時間Ticks
+            </summary>
+        </member>
+        <member name="T:Regulus.Utility.IUpdatable">
+            <summary>
+                更新器
+            </summary>
+        </member>
+        <member name="T:Regulus.Framework.IBootable">
+            <summary>
+                啟動器
+            </summary>
+        </member>
+        <member name="T:Regulus.Remoting.INotifier`1">
+            <summary>
+                介面物件通知器
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="E:Regulus.Remoting.INotifier`1.Return">
+            <summary>
+                伺服器端如果有物件傳入則會發生此事件
+                此事件傳回的物件如果沒有備參考到則會發生Unsupply
+            </summary>
+        </member>
+        <member name="E:Regulus.Remoting.INotifier`1.Supply">
+            <summary>
+                伺服器端如果有物件傳入則會發生此事件
+            </summary>
+        </member>
+        <member name="E:Regulus.Remoting.INotifier`1.Unsupply">
+            <summary>
+                伺服器端如果有物件關閉則會發生此事件
+            </summary>
+        </member>
+        <member name="P:Regulus.Remoting.INotifier`1.Ghosts">
+            <summary>
+                在系統裡的介面物件數量
+            </summary>
+        </member>
+        <member name="P:Regulus.Remoting.INotifier`1.Returns">
+            <summary>
+                在系統裡的介面物件數量(弱參考型別)
+            </summary>
+        </member>
+        <member name="T:Regulus.Remoting.Value`1">
+            <summary>
+                接收或傳送遠端來的資料
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="E:Regulus.Remoting.Value`1.OnValue">
+            <summary>
+                如果有設定資料則會發生此事件
+            </summary>
+        </member>
+        <member name="P:Regulus.Remoting.Value`1.Empty">
+            <summary>
+                空物件
+            </summary>
+        </member>
+        <member name="M:Regulus.Remoting.Value`1.#ctor">
+            <summary>
+                Initializes a new instance of the <see cref="T:Regulus.Remoting.Value`1" /> class.
+                建構子
+            </summary>
+        </member>
+        <member name="M:Regulus.Remoting.Value`1.#ctor(`0)">
+            <summary>
+                Initializes a new instance of the <see cref="T:Regulus.Remoting.Value`1" /> class.
+                預設已經填入資料
+            </summary>
+            <param name="val">
+            </param>
+        </member>
+        <member name="M:Regulus.Remoting.Value`1.SetValue(`0)">
+            <summary>
+                設定資料，將會發生OnValue事件
+            </summary>
+            <param name="val"></param>
+        </member>
+        <member name="M:Regulus.Remoting.Value`1.TryGetValue(`0@)">
+            <summary>
+                取得資料
+            </summary>
+            <param name="val"></param>
+            <returns>如果有資料則傳回真</returns>
+        </member>
+    </members>
+</doc>

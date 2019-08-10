@@ -1,0 +1,150 @@
+fileFormatVersion: 2
+guid: 40fc4cf8112d79f4aac5ab8ea957c84b
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: pipe_A
+    100002: pipe_A_ground
+    100004: pipe_A_junction
+    100006: pipe_A_turn_L
+    100008: pipe_A_turn_R
+    100010: pipe_AG
+    100012: pipe_B
+    100014: pipe_B_ground
+    100016: pipe_B_junction
+    100018: pipe_B_turn_L
+    100020: pipe_B_turn_R
+    100022: pipe_BG
+    100024: //RootNode
+    100026: valve_A
+    100028: valve_B
+    400000: pipe_A
+    400002: pipe_A_ground
+    400004: pipe_A_junction
+    400006: pipe_A_turn_L
+    400008: pipe_A_turn_R
+    400010: pipe_AG
+    400012: pipe_B
+    400014: pipe_B_ground
+    400016: pipe_B_junction
+    400018: pipe_B_turn_L
+    400020: pipe_B_turn_R
+    400022: pipe_BG
+    400024: //RootNode
+    400026: valve_A
+    400028: valve_B
+    2300000: pipe_A
+    2300002: pipe_A_ground
+    2300004: pipe_A_junction
+    2300006: pipe_A_turn_L
+    2300008: pipe_A_turn_R
+    2300010: pipe_B
+    2300012: pipe_B_ground
+    2300014: pipe_B_junction
+    2300016: pipe_B_turn_L
+    2300018: pipe_B_turn_R
+    2300020: valve_A
+    2300022: valve_B
+    3300000: pipe_A
+    3300002: pipe_A_ground
+    3300004: pipe_A_junction
+    3300006: pipe_A_turn_L
+    3300008: pipe_A_turn_R
+    3300010: pipe_B
+    3300012: pipe_B_ground
+    3300014: pipe_B_junction
+    3300016: pipe_B_turn_L
+    3300018: pipe_B_turn_R
+    3300020: valve_A
+    3300022: valve_B
+    4300000: valve_A
+    4300002: pipe_A_turn_L
+    4300004: pipe_A_turn_R
+    4300006: pipe_A_ground
+    4300008: pipe_A_2
+    4300010: pipe_A_junction
+    4300012: valve_B
+    4300014: pipe_B_turn_L
+    4300016: pipe_B_turn_R
+    4300018: pipe_B_ground
+    4300020: pipe_B_2
+    4300022: pipe_B_junction
+    4300024: pipe_A
+    4300026: pipe_B
+    6400000: pipe_A
+    6400002: pipe_A_ground
+    6400004: pipe_A_junction
+    6400006: pipe_A_turn_L
+    6400008: pipe_A_turn_R
+    6400010: pipe_B
+    6400012: pipe_B_ground
+    6400014: pipe_B_junction
+    6400016: pipe_B_turn_L
+    6400018: pipe_B_turn_R
+    6400020: valve_A
+    6400022: valve_B
+    11100000: //RootNode
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 2
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.01
+    meshCompression: 0
+    addColliders: 1
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+  tangentSpace:
+    normalSmoothAngle: 164
+    normalImportMode: 1
+    tangentImportMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,127 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>RegulusRemoting</name>
+    </assembly>
+    <members>
+        <member name="T:Regulus.Remoting.ICore">
+            <summary>
+                遠端物件提供的核心，欲提供給客戶端的物件主要進入點。
+            </summary>
+        </member>
+        <member name="M:Regulus.Remoting.IBinderProvider.AssignBinder(Regulus.Remoting.ISoulBinder)">
+            <summary>
+                如果客戶端連線成功系統會呼叫此方法並把SoulBinder傳入。
+            </summary>
+            <param name="binder"></param>
+        </member>
+        <member name="T:Regulus.Remoting.InterfaceProvider">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Regulus.Remoting.IAgent">
+            <summary>
+                ¥N²z¾¹
+            </summary>
+        </member>
+        <member name="E:Regulus.Remoting.IAgent.BreakEvent">
+            <summary>
+                »P»·ºÝµo¥ÍÂ_½u
+                ©I¥sDisconnect¤£·|µo¥Í¦¹¨Æ¥ó
+            </summary>
+        </member>
+        <member name="E:Regulus.Remoting.IAgent.ConnectEvent">
+            <summary>
+                ³s½u¦¨¥\¨Æ¥ó
+            </summary>
+        </member>
+        <member name="P:Regulus.Remoting.IAgent.Ping">
+            <summary>
+                Ping
+            </summary>
+        </member>
+        <member name="P:Regulus.Remoting.IAgent.Connected">
+            <summary>
+                ¬O§_¬°³s½uª¬ºA
+            </summary>
+        </member>
+        <member name="M:Regulus.Remoting.IAgent.QueryNotifier``1">
+            <summary>
+                ¬d¸ß¤¶­±ª«¥ó³qª¾ªÌ
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:Regulus.Remoting.IAgent.Connect(System.String,System.Int32)">
+            <summary>
+                ³s½u
+            </summary>
+            <param name="ipaddress"></param>
+            <param name="port"></param>
+            <returns>¦pªG³s½u¦¨¥\·|µo¥ÍOnValue¶Ç¦^true</returns>
+        </member>
+        <member name="M:Regulus.Remoting.IAgent.Disconnect">
+            <summary>
+                Â_½u
+            </summary>
+        </member>
+        <member name="E:Regulus.Remoting.IAgent.ErrorMethodEvent">
+            <summary>
+            ¿ù»~ªº¤èªk©I¥s
+            ¦pªG©I¥sªº¤èªk°Ñ¼Æ¦³»~«h·|¦^¶Ç¦¹°T®§.
+            ¨Æ¥ó°Ñ¼Æ:
+                1.¤èªk¦WºÙ
+                2.¿ù»~°T®§
+            ·|µo¥Í¦¹°T®§³q±`¬O¦]¬°client»Pserverª©¥»¤£¬Û®e©Ò­P.
+            </summary>
+        </member>
+        <member name="E:Regulus.Remoting.IAgent.ErrorVerifyEvent">
+            <summary>
+            ÅçÃÒ¿ù»~
+            ¥Nªí»P¦øªA¾¹ºÝªºÅçÃÒ½X¤£²Å
+            ¨Æ¥ó°Ñ¼Æ:
+                1.¦øªA¾¹ÅçÃÒ½X
+                2.¥»¦aÅçÃÒ½X
+            ·|µo¥Í¦¹°T®§³q±`¬O¦]¬°client»Pserverª©¥»¤£¬Û®e©Ò­P.
+            </summary>
+        </member>
+        <member name="M:Regulus.Remoting.PackageWriter`1.#ctor(Regulus.Serialization.ISerializer)">
+            <summary>
+                Initializes a new instance of the <see cref="!:PackageWriter" /> class.
+            </summary>
+            <param name="serializer">序列化物件</param>
+        </member>
+        <member name="T:Regulus.Remoting.ISoulBinder">
+            <summary>
+                伺服器端對外綁定物件
+            </summary>
+        </member>
+        <member name="E:Regulus.Remoting.ISoulBinder.BreakEvent">
+            <summary>
+                如果發生與客戶端斷線則會發生此事件
+            </summary>
+        </member>
+        <member name="M:Regulus.Remoting.ISoulBinder.Return``1(``0)">
+            <summary>
+                將介面物件傳回給客戶端，客戶端沒參考時則會自動釋放。
+            </summary>
+            <typeparam name="TSoul"></typeparam>
+            <param name="soul"></param>
+        </member>
+        <member name="M:Regulus.Remoting.ISoulBinder.Bind``1(``0)">
+            <summary>
+                將介面物件綁定給客戶端。
+            </summary>
+            <typeparam name="TSoul"></typeparam>
+            <param name="soul"></param>
+        </member>
+        <member name="M:Regulus.Remoting.ISoulBinder.Unbind``1(``0)">
+            <summary>
+                解綁定給客戶端的介面物件
+            </summary>
+            <typeparam name="TSoul"></typeparam>
+            <param name="soul"></param>
+        </member>
+    </members>
+</doc>

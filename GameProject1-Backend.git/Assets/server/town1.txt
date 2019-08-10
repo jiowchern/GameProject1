@@ -1,0 +1,821 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ArrayOfEntityGroupLayout xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityGroupLayout>
+    <Id>town1</Id>
+    <Entitys>
+      <EntityLayout>
+        <Id>3f2f7c4f-e7be-449e-bab0-63688ae8cfe8</Id>
+        <Type>ENTRANCE</Type>
+        <Position x="1.36" y="-21.5" />
+        <Direction>0</Direction>
+      </EntityLayout>
+      <EntityLayout>
+        <Id>998cd51f-1136-412b-880b-b92318043261</Id>
+        <Type>STATIC</Type>
+        <Position x="10.92" y="-10.1" />
+        <Direction>270</Direction>
+      </EntityLayout>
+      <EntityLayout>
+        <Id>b2d32c7d-8dd7-4fee-a03f-b1d2744c5757</Id>
+        <Type>STATIC</Type>
+        <Position x="12" y="6.59" />
+        <Direction>180.000015</Direction>
+      </EntityLayout>
+      <EntityLayout>
+        <Id>4b9ca426-9da0-4606-8180-208378460d4b</Id>
+        <Type>STATIC</Type>
+        <Position x="-14.5" y="0.92" />
+        <Direction>90.00002</Direction>
+      </EntityLayout>
+      <EntityLayout>
+        <Id>3f67cc1d-278c-4592-bb5d-9a99bfd1b321</Id>
+        <Type>STATIC</Type>
+        <Position x="-1" y="2" />
+        <Direction>180.000015</Direction>
+      </EntityLayout>
+      <EntityLayout>
+        <Id>37def9cd-7b87-4537-af31-a95a3eaba3e3</Id>
+        <Type>STATIC</Type>
+        <Position x="-11.92" y="-20.1" />
+        <Direction>90.00002</Direction>
+      </EntityLayout>
+      <EntityLayout>
+        <Id>6841ec85-3531-433f-a2e8-8b4c15f735b1</Id>
+        <Type>STATIC</Type>
+        <Position x="22.3540344" y="-25.5952759" />
+        <Direction>270.000061</Direction>
+      </EntityLayout>
+      <EntityLayout>
+        <Id>6892e4cf-5a02-4089-bf2d-9aebbdc61fc7</Id>
+        <Type>STATIC</Type>
+        <Position x="13.4220581" y="-12.70549" />
+        <Direction>0</Direction>
+      </EntityLayout>
+      <EntityLayout>
+        <Id>f0e865ca-8892-44de-97df-0f6fd5a5d899</Id>
+        <Type>STATIC</Type>
+        <Position x="12.1531372" y="-12.8215942" />
+        <Direction>0</Direction>
+      </EntityLayout>
+      <EntityLayout>
+        <Id>c1c58964-7e3f-4c9f-87d2-878712dcc114</Id>
+        <Type>STATIC</Type>
+        <Position x="-6.60940552" y="-9.61895752" />
+        <Direction>270.000153</Direction>
+      </EntityLayout>
+      <EntityLayout>
+        <Id>3d0ca0e7-0065-4670-9b16-be98ecfaa3fa</Id>
+        <Type>STATIC</Type>
+        <Position x="-11.5116882" y="-22.8141785" />
+        <Direction>90.00001</Direction>
+      </EntityLayout>
+      <EntityLayout>
+        <Id>d7545c7a-9218-4385-b797-46390d13048f</Id>
+        <Type>STATIC</Type>
+        <Position x="13.881958" y="-22.7371063" />
+        <Direction>0</Direction>
+      </EntityLayout>
+      <EntityLayout>
+        <Id>e970f068-b6a3-4cd0-bf13-7f62336649c9</Id>
+        <Type>STATIC</Type>
+        <Position x="9.208" y="8.35" />
+        <Direction>0</Direction>
+      </EntityLayout>
+      <EntityLayout>
+        <Id>f39a5c86-3f87-4b79-b886-263311dcd592</Id>
+        <Type>STATIC</Type>
+        <Position x="-20.38" y="-9.13" />
+        <Direction>0</Direction>
+      </EntityLayout>
+      <EntityLayout>
+        <Id>95437030-9e58-40c5-8b1c-5cfeb7134763</Id>
+        <Type>STATIC</Type>
+        <Position x="-19.84" y="-9.02" />
+        <Direction>0</Direction>
+      </EntityLayout>
+      <EntityLayout>
+        <Id>1506b939-1cf1-4ed8-8f17-40a17da803df</Id>
+        <Type>STATIC</Type>
+        <Position x="-14.34" y="-15.55" />
+        <Direction>0</Direction>
+      </EntityLayout>
+      <EntityLayout>
+        <Id>51bf6775-46ae-4e94-9513-a9c18aaab740</Id>
+        <Type>STATIC</Type>
+        <Position x="-14.272" y="-16.725" />
+        <Direction>0</Direction>
+      </EntityLayout>
+      <EntityLayout>
+        <Id>9b8912ff-39bb-4aeb-946e-e89fc0426076</Id>
+        <Type>STATIC</Type>
+        <Position x="-20.77" y="-9.3" />
+        <Direction>0</Direction>
+      </EntityLayout>
+      <EntityLayout>
+        <Id>95e383fe-2b18-4af7-95b9-794160346f03</Id>
+        <Type>STATIC</Type>
+        <Position x="-15.87" y="4.17" />
+        <Direction>104.99984</Direction>
+      </EntityLayout>
+      <EntityLayout>
+        <Id>3cda2baf-a9f9-4fba-95e8-82a8de49a558</Id>
+        <Type>STATIC</Type>
+        <Position x="-16.32" y="-1.34" />
+        <Direction>0</Direction>
+      </EntityLayout>
+      <EntityLayout>
+        <Id>9e109b95-4df4-4715-9c64-cac02ca99eda</Id>
+        <Type>STATIC</Type>
+        <Position x="2.864029" y="4.323639" />
+        <Direction>0</Direction>
+      </EntityLayout>
+      <EntityLayout>
+        <Id>0a731739-8ba0-4de8-99fa-028f4b009b3f</Id>
+        <Type>STATIC</Type>
+        <Position x="1.48701477" y="4.21705627" />
+        <Direction>0</Direction>
+      </EntityLayout>
+      <EntityLayout>
+        <Id>ef968c6c-0458-4eae-ab48-ad9811a709c4</Id>
+        <Type>STATIC</Type>
+        <Position x="-3.890503" y="2.88719177" />
+        <Direction>0</Direction>
+      </EntityLayout>
+      <EntityLayout>
+        <Id>6aa5882f-6c79-4d6a-8529-2b0d32dab1b7</Id>
+        <Type>STATIC</Type>
+        <Position x="-5.67" y="2.46" />
+        <Direction>269.999969</Direction>
+      </EntityLayout>
+      <EntityLayout>
+        <Id>54fab650-c84a-4d11-a5b5-1227b9d65410</Id>
+        <Type>STATIC</Type>
+        <Position x="-12.21" y="-13.22" />
+        <Direction>180</Direction>
+      </EntityLayout>
+      <EntityLayout>
+        <Id>527eab29-0fd7-4f15-a2a2-31d7eaa05a96</Id>
+        <Type>STATIC</Type>
+        <Position x="-4.904" y="-10.469" />
+        <Direction>58.7809143</Direction>
+      </EntityLayout>
+      <EntityLayout>
+        <Id>06275ded-2479-49bc-a86b-f9ba60b23f54</Id>
+        <Type>STATIC</Type>
+        <Position x="10.49" y="-12.81" />
+        <Direction>270</Direction>
+      </EntityLayout>
+      <EntityLayout>
+        <Id>9cf508e7-8253-40f9-8a4b-b28d3c167f6c</Id>
+        <Type>STATIC</Type>
+        <Position x="9.56" y="-10" />
+        <Direction>180.000031</Direction>
+      </EntityLayout>
+      <EntityLayout>
+        <Id>24ed970c-2ce4-4600-9ec5-ce22b233501f</Id>
+        <Type>STATIC</Type>
+        <Position x="-10.577" y="-20.11" />
+        <Direction>0</Direction>
+      </EntityLayout>
+      <EntityLayout>
+        <Id>09a1d6ff-52da-4c2c-b865-b06ecb3db0a0</Id>
+        <Type>STATIC</Type>
+        <Position x="-1.04" y="0.644" />
+        <Direction>89.99999</Direction>
+      </EntityLayout>
+      <EntityLayout>
+        <Id>9946d97c-5e91-49ea-ac64-495396bcbaa7</Id>
+        <Type>STATIC</Type>
+        <Position x="-19.0045013" y="-22.5927429" />
+        <Direction>0</Direction>
+      </EntityLayout>
+      <EntityLayout>
+        <Id>facf3dac-e211-40c6-865d-73198fb48e25</Id>
+        <Type>STATIC</Type>
+        <Position x="-20.4293823" y="-22.80397" />
+        <Direction>0</Direction>
+      </EntityLayout>
+      <EntityLayout>
+        <Id>92e47254-4dea-4738-8af8-6444f5b36f11</Id>
+        <Type>STATIC</Type>
+        <Position x="-6" y="-27" />
+        <Direction>0</Direction>
+      </EntityLayout>
+      <EntityLayout>
+        <Id>6079343b-216c-4161-b1d7-d43994e5c737</Id>
+        <Type>STATIC</Type>
+        <Position x="-6.43" y="-27.53" />
+        <Direction>0</Direction>
+      </EntityLayout>
+      <EntityLayout>
+        <Id>32ea5ac4-bf1d-469e-90b6-22d34ca3b59c</Id>
+        <Type>STATIC</Type>
+        <Position x="-5.59" y="-27.51" />
+        <Direction>-1.17915147E-06</Direction>
+      </EntityLayout>
+      <EntityLayout>
+        <Id>3445f5bc-38ec-44c9-bdfd-cb06963466cf</Id>
+        <Type>STATIC</Type>
+        <Position x="6.17" y="-30.03" />
+        <Direction>0</Direction>
+      </EntityLayout>
+      <EntityLayout>
+        <Id>9cd783ab-3835-45de-b64e-c8e2fb2fbcc6</Id>
+        <Type>STATIC</Type>
+        <Position x="12.74" y="-25.35" />
+        <Direction>0</Direction>
+      </EntityLayout>
+      <EntityLayout>
+        <Id>e9f07500-d492-407b-b012-0fd04d948d34</Id>
+        <Type>STATIC</Type>
+        <Position x="18.63" y="9.37" />
+        <Direction>0</Direction>
+      </EntityLayout>
+      <EntityLayout>
+        <Id>76dbefc8-bc01-4ba0-8dfe-793f140fcf73</Id>
+        <Type>STATIC</Type>
+        <Position x="-11.9942474" y="-24.988739" />
+        <Direction>0</Direction>
+      </EntityLayout>
+      <EntityLayout>
+        <Id>193dfe09-fb75-4406-8c89-d2d5f15b7c91</Id>
+        <Type>STATIC</Type>
+        <Position x="24.47" y="-27.82" />
+        <Direction>0</Direction>
+      </EntityLayout>
+      <EntityLayout>
+        <Id>70efbbb4-b897-4681-a1f2-30499d4194d8</Id>
+        <Type>STATIC</Type>
+        <Position x="-1.66" y="-30.15" />
+        <Direction>0</Direction>
+      </EntityLayout>
+      <EntityLayout>
+        <Id>0803f968-baac-4a0c-8603-ed251f1e83c0</Id>
+        <Type>STATIC</Type>
+        <Position x="-1.66" y="17.85" />
+        <Direction>0</Direction>
+      </EntityLayout>
+      <EntityLayout>
+        <Id>0c29a678-8c6b-494f-9951-61b0f5d804de</Id>
+        <Type>STATIC</Type>
+        <Position x="-30.13" y="-6.12" />
+        <Direction>90.00001</Direction>
+      </EntityLayout>
+      <EntityLayout>
+        <Id>9795501d-4df1-435a-a990-41fa976bd30f</Id>
+        <Type>STATIC</Type>
+        <Position x="27.08" y="-6.12" />
+        <Direction>90.00001</Direction>
+      </EntityLayout>
+      <EntityLayout>
+        <Id>984f8c48-2240-4a30-bf5a-2652b1bd4368</Id>
+        <Type>PORTAL</Type>
+        <Position x="24.1176147" y="8.422577" />
+        <Direction>0</Direction>
+      </EntityLayout>
+      <EntityLayout>
+        <Id>8b0c8240-68c7-499b-acc2-a5cfdabf174d</Id>
+        <Type>ENTRANCE</Type>
+        <Position x="3.63" y="-4.17" />
+        <Direction>0</Direction>
+      </EntityLayout>
+    </Entitys>
+    <Chests />
+    <Statics>
+      <StaticLayout>
+        <Owner>998cd51f-1136-412b-880b-b92318043261</Owner>
+        <Body>
+          <ArrayOfVector2>
+            <Vector2 x="10.5016537" y="-7.747377" />
+            <Vector2 x="10.5016546" y="-12.4709015" />
+            <Vector2 x="13.4764671" y="-12.4709015" />
+            <Vector2 x="21.3276253" y="-12.2989788" />
+            <Vector2 x="21.3276253" y="0.450937271" />
+            <Vector2 x="17.3533783" y="0.450938225" />
+            <Vector2 x="13.3791294" y="0.450937271" />
+          </ArrayOfVector2>
+        </Body>
+      </StaticLayout>
+      <StaticLayout>
+        <Owner>b2d32c7d-8dd7-4fee-a03f-b1d2744c5757</Owner>
+        <Body>
+          <ArrayOfVector2>
+            <Vector2 x="9.629098" y="6.17165565" />
+            <Vector2 x="14.352622" y="6.171654" />
+            <Vector2 x="14.352623" y="10.1461535" />
+            <Vector2 x="11.9908619" y="10.1461554" />
+            <Vector2 x="9.629099" y="10.1461554" />
+          </ArrayOfVector2>
+        </Body>
+      </StaticLayout>
+      <StaticLayout>
+        <Owner>4b9ca426-9da0-4606-8180-208378460d4b</Owner>
+        <Body>
+          <ArrayOfVector2>
+            <Vector2 x="-18.0561581" y="-1.4508996" />
+            <Vector2 x="-14.0816555" y="-1.450902" />
+            <Vector2 x="-14.0816526" y="3.27262259" />
+            <Vector2 x="-18.0561543" y="3.272625" />
+            <Vector2 x="-18.0561562" y="0.9108628" />
+          </ArrayOfVector2>
+        </Body>
+      </StaticLayout>
+      <StaticLayout>
+        <Owner>3f67cc1d-278c-4592-bb5d-9a99bfd1b321</Owner>
+        <Body>
+          <ArrayOfVector2>
+            <Vector2 x="-7.41674137" y="4.3875" />
+            <Vector2 x="-3.35262251" y="1.5816555" />
+            <Vector2 x="1.37090158" y="1.58165407" />
+            <Vector2 x="5.23898" y="4.38749552" />
+            <Vector2 x="5.23898125" y="8.409294" />
+            <Vector2 x="5.238982" y="12.4310932" />
+            <Vector2 x="-7.41673851" y="12.431097" />
+          </ArrayOfVector2>
+        </Body>
+      </StaticLayout>
+      <StaticLayout>
+        <Owner>37def9cd-7b87-4537-af31-a95a3eaba3e3</Owner>
+        <Body>
+          <ArrayOfVector2>
+            <Vector2 x="-22.3276253" y="-23.3984623" />
+            <Vector2 x="-14.476469" y="-23.6563511" />
+            <Vector2 x="-11.5016565" y="-23.656353" />
+            <Vector2 x="-11.5016527" y="-16.5710659" />
+            <Vector2 x="-14.3791218" y="-4.273595" />
+            <Vector2 x="-18.3533688" y="-4.273591" />
+            <Vector2 x="-22.3276157" y="-4.27359" />
+          </ArrayOfVector2>
+        </Body>
+      </StaticLayout>
+      <StaticLayout>
+        <Owner>6841ec85-3531-433f-a2e8-8b4c15f735b1</Owner>
+        <Body>
+          <ArrayOfVector2>
+            <Vector2 x="20.736372" y="-24.807415" />
+            <Vector2 x="22.5010929" y="-24.8074169" />
+            <Vector2 x="22.5010948" y="-22.9691639" />
+            <Vector2 x="20.7363739" y="-22.969162" />
+          </ArrayOfVector2>
+        </Body>
+      </StaticLayout>
+      <StaticLayout>
+        <Owner>6892e4cf-5a02-4089-bf2d-9aebbdc61fc7</Owner>
+        <Body>
+          <ArrayOfVector2>
+            <Vector2 x="13.0220585" y="-12.7057667" />
+            <Vector2 x="13.8220577" y="-12.7057667" />
+            <Vector2 x="13.8220577" y="-11.9054909" />
+            <Vector2 x="13.0220585" y="-11.9054909" />
+          </ArrayOfVector2>
+        </Body>
+      </StaticLayout>
+      <StaticLayout>
+        <Owner>f0e865ca-8892-44de-97df-0f6fd5a5d899</Owner>
+        <Body>
+          <ArrayOfVector2>
+            <Vector2 x="11.6531372" y="-12.7719736" />
+            <Vector2 x="12.6531372" y="-12.7719736" />
+            <Vector2 x="12.6531372" y="-11.771595" />
+            <Vector2 x="11.6531372" y="-11.771595" />
+          </ArrayOfVector2>
+        </Body>
+      </StaticLayout>
+      <StaticLayout>
+        <Owner>c1c58964-7e3f-4c9f-87d2-878712dcc114</Owner>
+        <Body>
+          <ArrayOfVector2>
+            <Vector2 x="-8.365418" y="-9.221153" />
+            <Vector2 x="-4.84778833" y="-9.221162" />
+            <Vector2 x="-4.847781" y="-6.309163" />
+            <Vector2 x="-8.365412" y="-6.309155" />
+          </ArrayOfVector2>
+        </Body>
+      </StaticLayout>
+      <StaticLayout>
+        <Owner>3d0ca0e7-0065-4670-9b16-be98ecfaa3fa</Owner>
+        <Body>
+          <ArrayOfVector2>
+            <Vector2 x="-11.7998886" y="-22.9021988" />
+            <Vector2 x="-11.6312666" y="-22.9337559" />
+            <Vector2 x="-10.6634769" y="-23.02101" />
+            <Vector2 x="-10.2498159" y="-23.02101" />
+            <Vector2 x="-10.0434532" y="-22.9022" />
+            <Vector2 x="-10.0434532" y="-22.7261581" />
+            <Vector2 x="-10.2498159" y="-22.6073475" />
+            <Vector2 x="-10.6634769" y="-22.6073475" />
+            <Vector2 x="-11.6312656" y="-22.6946011" />
+            <Vector2 x="-11.7998886" y="-22.7261581" />
+          </ArrayOfVector2>
+        </Body>
+      </StaticLayout>
+      <StaticLayout>
+        <Owner>d7545c7a-9218-4385-b797-46390d13048f</Owner>
+        <Body>
+          <ArrayOfVector2>
+            <Vector2 x="12.2279158" y="-24.03979" />
+            <Vector2 x="15.536" y="-24.03979" />
+            <Vector2 x="15.536" y="-21.1276474" />
+            <Vector2 x="12.2279158" y="-21.1276474" />
+          </ArrayOfVector2>
+        </Body>
+      </StaticLayout>
+      <StaticLayout>
+        <Owner>e970f068-b6a3-4cd0-bf13-7f62336649c9</Owner>
+        <Body>
+          <ArrayOfVector2>
+            <Vector2 x="8.218938" y="7.76092434" />
+            <Vector2 x="10.1970625" y="7.76092434" />
+            <Vector2 x="10.1970625" y="10.0100727" />
+            <Vector2 x="8.218938" y="10.0100727" />
+          </ArrayOfVector2>
+        </Body>
+      </StaticLayout>
+      <StaticLayout>
+        <Owner>f39a5c86-3f87-4b79-b886-263311dcd592</Owner>
+        <Body>
+          <ArrayOfVector2>
+            <Vector2 x="-20.7799988" y="-9.130277" />
+            <Vector2 x="-19.98" y="-9.130277" />
+            <Vector2 x="-19.98" y="-8.330001" />
+            <Vector2 x="-20.7799988" y="-8.330001" />
+          </ArrayOfVector2>
+        </Body>
+      </StaticLayout>
+      <StaticLayout>
+        <Owner>95437030-9e58-40c5-8b1c-5cfeb7134763</Owner>
+        <Body>
+          <ArrayOfVector2>
+            <Vector2 x="-20.24" y="-9.020277" />
+            <Vector2 x="-19.44" y="-9.020277" />
+            <Vector2 x="-19.44" y="-8.220001" />
+            <Vector2 x="-20.24" y="-8.220001" />
+          </ArrayOfVector2>
+        </Body>
+      </StaticLayout>
+      <StaticLayout>
+        <Owner>1506b939-1cf1-4ed8-8f17-40a17da803df</Owner>
+        <Body>
+          <ArrayOfVector2>
+            <Vector2 x="-14.74" y="-15.5502768" />
+            <Vector2 x="-13.9400005" y="-15.5502768" />
+            <Vector2 x="-13.9400005" y="-14.750001" />
+            <Vector2 x="-14.74" y="-14.750001" />
+          </ArrayOfVector2>
+        </Body>
+      </StaticLayout>
+      <StaticLayout>
+        <Owner>51bf6775-46ae-4e94-9513-a9c18aaab740</Owner>
+        <Body>
+          <ArrayOfVector2>
+            <Vector2 x="-14.772" y="-16.67538" />
+            <Vector2 x="-13.772" y="-16.67538" />
+            <Vector2 x="-13.772" y="-15.6750011" />
+            <Vector2 x="-14.772" y="-15.6750011" />
+          </ArrayOfVector2>
+        </Body>
+      </StaticLayout>
+      <StaticLayout>
+        <Owner>9b8912ff-39bb-4aeb-946e-e89fc0426076</Owner>
+        <Body>
+          <ArrayOfVector2>
+            <Vector2 x="-21.17" y="-9.300277" />
+            <Vector2 x="-20.37" y="-9.300277" />
+            <Vector2 x="-20.37" y="-8.500001" />
+            <Vector2 x="-21.17" y="-8.500001" />
+          </ArrayOfVector2>
+        </Body>
+      </StaticLayout>
+      <StaticLayout>
+        <Owner>95e383fe-2b18-4af7-95b9-794160346f03</Owner>
+        <Body>
+          <ArrayOfVector2>
+            <Vector2 x="-16.98766" y="4.10728025" />
+            <Vector2 x="-14.8154755" y="3.52525187" />
+            <Vector2 x="-14.303504" y="5.435977" />
+            <Vector2 x="-16.4756889" y="6.01800537" />
+          </ArrayOfVector2>
+        </Body>
+      </StaticLayout>
+      <StaticLayout>
+        <Owner>3cda2baf-a9f9-4fba-95e8-82a8de49a558</Owner>
+        <Body>
+          <ArrayOfVector2>
+            <Vector2 x="-17.1199989" y="-2.01882386" />
+            <Vector2 x="-15.52" y="-2.01882386" />
+            <Vector2 x="-15.52" y="-0.6611785" />
+            <Vector2 x="-17.1199989" y="-0.6611785" />
+          </ArrayOfVector2>
+        </Body>
+      </StaticLayout>
+      <StaticLayout>
+        <Owner>9e109b95-4df4-4715-9c64-cac02ca99eda</Owner>
+        <Body>
+          <ArrayOfVector2>
+            <Vector2 x="2.464029" y="4.323363" />
+            <Vector2 x="3.26402879" y="4.323363" />
+            <Vector2 x="3.26402879" y="5.12363863" />
+            <Vector2 x="2.464029" y="5.12363863" />
+          </ArrayOfVector2>
+        </Body>
+      </StaticLayout>
+      <StaticLayout>
+        <Owner>0a731739-8ba0-4de8-99fa-028f4b009b3f</Owner>
+        <Body>
+          <ArrayOfVector2>
+            <Vector2 x="0.9870148" y="4.26667643" />
+            <Vector2 x="1.98701477" y="4.26667643" />
+            <Vector2 x="1.98701477" y="5.267056" />
+            <Vector2 x="0.9870148" y="5.267056" />
+          </ArrayOfVector2>
+        </Body>
+      </StaticLayout>
+      <StaticLayout>
+        <Owner>ef968c6c-0458-4eae-ab48-ad9811a709c4</Owner>
+        <Body>
+          <ArrayOfVector2>
+            <Vector2 x="-4.490503" y="2.63340282" />
+            <Vector2 x="-3.290503" y="2.63340282" />
+            <Vector2 x="-3.290503" y="3.83364153" />
+            <Vector2 x="-4.490503" y="3.83364153" />
+          </ArrayOfVector2>
+        </Body>
+      </StaticLayout>
+      <StaticLayout>
+        <Owner>6aa5882f-6c79-4d6a-8529-2b0d32dab1b7</Owner>
+        <Body>
+          <ArrayOfVector2>
+            <Vector2 x="-7.76043749" y="2.76982546" />
+            <Vector2 x="-3.24748635" y="2.76982546" />
+            <Vector2 x="-3.003369" y="2.769826" />
+            <Vector2 x="-3.00336933" y="4.755528" />
+            <Vector2 x="-7.51632" y="4.755528" />
+            <Vector2 x="-7.76043749" y="4.7555275" />
+          </ArrayOfVector2>
+        </Body>
+      </StaticLayout>
+      <StaticLayout>
+        <Owner>54fab650-c84a-4d11-a5b5-1227b9d65410</Owner>
+        <Body>
+          <ArrayOfVector2>
+            <Vector2 x="-14.0367661" y="-13.6582594" />
+            <Vector2 x="-11.7967653" y="-13.6582632" />
+            <Vector2 x="-11.7967577" y="-9.537568" />
+            <Vector2 x="-11.7967577" y="-9.405995" />
+            <Vector2 x="-14.0367575" y="-9.405991" />
+            <Vector2 x="-14.0367661" y="-13.5266867" />
+          </ArrayOfVector2>
+        </Body>
+      </StaticLayout>
+      <StaticLayout>
+        <Owner>527eab29-0fd7-4f15-a2a2-31d7eaa05a96</Owner>
+        <Body>
+          <ArrayOfVector2>
+            <Vector2 x="-5.68062449" y="-10.2209358" />
+            <Vector2 x="-5.35243273" y="-10.7629042" />
+            <Vector2 x="-5.30914068" y="-10.7402582" />
+            <Vector2 x="-4.71825" y="-10.3821325" />
+            <Vector2 x="-5.04644156" y="-9.840164" />
+            <Vector2 x="-5.0897336" y="-9.86281" />
+          </ArrayOfVector2>
+        </Body>
+      </StaticLayout>
+      <StaticLayout>
+        <Owner>06275ded-2479-49bc-a86b-f9ba60b23f54</Owner>
+        <Body>
+          <ArrayOfVector2>
+            <Vector2 x="9.021765" y="-12.8980217" />
+            <Vector2 x="9.22812748" y="-13.01683" />
+            <Vector2 x="9.64178848" y="-13.01683" />
+            <Vector2 x="10.6095781" y="-12.9295778" />
+            <Vector2 x="10.7782" y="-12.8980217" />
+            <Vector2 x="10.7782" y="-12.7219791" />
+            <Vector2 x="10.6095772" y="-12.690423" />
+            <Vector2 x="9.64178848" y="-12.60317" />
+            <Vector2 x="9.22812748" y="-12.60317" />
+            <Vector2 x="9.021765" y="-12.72198" />
+          </ArrayOfVector2>
+        </Body>
+      </StaticLayout>
+      <StaticLayout>
+        <Owner>9cf508e7-8253-40f9-8a4b-b28d3c167f6c</Owner>
+        <Body>
+          <ArrayOfVector2>
+            <Vector2 x="7.95298862" y="-9.746331" />
+            <Vector2 x="10.2896624" y="-9.746332" />
+            <Vector2 x="10.2896624" y="-9.52351" />
+            <Vector2 x="7.95298862" y="-9.523509" />
+          </ArrayOfVector2>
+        </Body>
+      </StaticLayout>
+      <StaticLayout>
+        <Owner>24ed970c-2ce4-4600-9ec5-ce22b233501f</Owner>
+        <Body>
+          <ArrayOfVector2>
+            <Vector2 x="-11.7453365" y="-19.8568325" />
+            <Vector2 x="-9.408663" y="-19.8568325" />
+            <Vector2 x="-9.408663" y="-19.6332626" />
+            <Vector2 x="-11.7453365" y="-19.6332626" />
+          </ArrayOfVector2>
+        </Body>
+      </StaticLayout>
+      <StaticLayout>
+        <Owner>09a1d6ff-52da-4c2c-b865-b06ecb3db0a0</Owner>
+        <Body>
+          <ArrayOfVector2>
+            <Vector2 x="-1.37074876" y="1.95807838" />
+            <Vector2 x="-1.37074828" y="-0.3785954" />
+            <Vector2 x="-1.14792609" y="-0.3785954" />
+            <Vector2 x="-1.14792609" y="-0.378595173" />
+            <Vector2 x="-1.14792669" y="1.95807862" />
+            <Vector2 x="-1.37074876" y="1.95807862" />
+          </ArrayOfVector2>
+        </Body>
+      </StaticLayout>
+      <StaticLayout>
+        <Owner>9946d97c-5e91-49ea-ac64-495396bcbaa7</Owner>
+        <Body>
+          <ArrayOfVector2>
+            <Vector2 x="-19.404501" y="-22.59302" />
+            <Vector2 x="-18.6045017" y="-22.59302" />
+            <Vector2 x="-18.6045017" y="-21.7927437" />
+            <Vector2 x="-19.404501" y="-21.7927437" />
+          </ArrayOfVector2>
+        </Body>
+      </StaticLayout>
+      <StaticLayout>
+        <Owner>facf3dac-e211-40c6-865d-73198fb48e25</Owner>
+        <Body>
+          <ArrayOfVector2>
+            <Vector2 x="-20.9293823" y="-22.75435" />
+            <Vector2 x="-19.9293823" y="-22.75435" />
+            <Vector2 x="-19.9293823" y="-21.7539711" />
+            <Vector2 x="-20.9293823" y="-21.7539711" />
+          </ArrayOfVector2>
+        </Body>
+      </StaticLayout>
+      <StaticLayout>
+        <Owner>92e47254-4dea-4738-8af8-6444f5b36f11</Owner>
+        <Body>
+          <ArrayOfVector2>
+            <Vector2 x="-7.62113571" y="-28.5551033" />
+            <Vector2 x="-4.379096" y="-28.5551033" />
+            <Vector2 x="-4.379096" y="-26.793169" />
+            <Vector2 x="-7.62113571" y="-26.793169" />
+          </ArrayOfVector2>
+        </Body>
+      </StaticLayout>
+      <StaticLayout>
+        <Owner>6079343b-216c-4161-b1d7-d43994e5c737</Owner>
+        <Body>
+          <ArrayOfVector2>
+            <Vector2 x="-6.68664837" y="-27.8567638" />
+            <Vector2 x="-6.17335129" y="-27.8567638" />
+            <Vector2 x="-6.17335129" y="-27.03217" />
+            <Vector2 x="-6.68664837" y="-27.03217" />
+          </ArrayOfVector2>
+        </Body>
+      </StaticLayout>
+      <StaticLayout>
+        <Owner>32ea5ac4-bf1d-469e-90b6-22d34ca3b59c</Owner>
+        <Body>
+          <ArrayOfVector2>
+            <Vector2 x="-5.87857771" y="-27.8147449" />
+            <Vector2 x="-5.36700869" y="-27.8561325" />
+            <Vector2 x="-5.3014226" y="-27.0719967" />
+            <Vector2 x="-5.3014226" y="-27.0341854" />
+            <Vector2 x="-5.81299162" y="-26.9928" />
+            <Vector2 x="-5.87857771" y="-27.7769356" />
+          </ArrayOfVector2>
+        </Body>
+      </StaticLayout>
+      <StaticLayout>
+        <Owner>3445f5bc-38ec-44c9-bdfd-cb06963466cf</Owner>
+        <Body>
+          <ArrayOfVector2>
+            <Vector2 x="6.05" y="-28.9260483" />
+            <Vector2 x="6.29" y="-28.9260483" />
+            <Vector2 x="6.29" y="-28.6849957" />
+            <Vector2 x="6.05" y="-28.6849957" />
+          </ArrayOfVector2>
+        </Body>
+      </StaticLayout>
+      <StaticLayout>
+        <Owner>9cd783ab-3835-45de-b64e-c8e2fb2fbcc6</Owner>
+        <Body>
+          <ArrayOfVector2>
+            <Vector2 x="12.188633" y="-25.4849567" />
+            <Vector2 x="13.2913666" y="-25.4849567" />
+            <Vector2 x="13.2913666" y="-24.4128571" />
+            <Vector2 x="12.188633" y="-24.4128571" />
+          </ArrayOfVector2>
+        </Body>
+      </StaticLayout>
+      <StaticLayout>
+        <Owner>e9f07500-d492-407b-b012-0fd04d948d34</Owner>
+        <Body>
+          <ArrayOfVector2>
+            <Vector2 x="17.8771763" y="9.256632" />
+            <Vector2 x="19.382822" y="9.256632" />
+            <Vector2 x="19.382822" y="10.7238531" />
+            <Vector2 x="17.8771763" y="10.7238531" />
+          </ArrayOfVector2>
+        </Body>
+      </StaticLayout>
+      <StaticLayout>
+        <Owner>76dbefc8-bc01-4ba0-8dfe-793f140fcf73</Owner>
+        <Body>
+          <ArrayOfVector2>
+            <Vector2 x="-12.7470694" y="-25.102108" />
+            <Vector2 x="-11.2414255" y="-25.102108" />
+            <Vector2 x="-11.2414255" y="-23.6348858" />
+            <Vector2 x="-12.7470694" y="-23.6348858" />
+          </ArrayOfVector2>
+        </Body>
+      </StaticLayout>
+      <StaticLayout>
+        <Owner>193dfe09-fb75-4406-8c89-d2d5f15b7c91</Owner>
+        <Body>
+          <ArrayOfVector2>
+            <Vector2 x="23.7171764" y="-27.9333687" />
+            <Vector2 x="25.2228222" y="-27.9333687" />
+            <Vector2 x="25.2228222" y="-26.4661465" />
+            <Vector2 x="23.7171764" y="-26.4661465" />
+          </ArrayOfVector2>
+        </Body>
+      </StaticLayout>
+      <StaticLayout>
+        <Owner>70efbbb4-b897-4681-a1f2-30499d4194d8</Owner>
+        <Body>
+          <ArrayOfVector2>
+            <Vector2 x="-30.3567352" y="-30.4125729" />
+            <Vector2 x="27.0367355" y="-30.4125729" />
+            <Vector2 x="27.0367355" y="-29.8874264" />
+            <Vector2 x="-30.3567352" y="-29.8874264" />
+          </ArrayOfVector2>
+        </Body>
+      </StaticLayout>
+      <StaticLayout>
+        <Owner>0803f968-baac-4a0c-8603-ed251f1e83c0</Owner>
+        <Body>
+          <ArrayOfVector2>
+            <Vector2 x="-30.3567352" y="17.5874271" />
+            <Vector2 x="27.0367355" y="17.5874271" />
+            <Vector2 x="27.0367355" y="18.1125736" />
+            <Vector2 x="-30.3567352" y="18.1125736" />
+          </ArrayOfVector2>
+        </Body>
+      </StaticLayout>
+      <StaticLayout>
+        <Owner>0c29a678-8c6b-494f-9951-61b0f5d804de</Owner>
+        <Body>
+          <ArrayOfVector2>
+            <Vector2 x="-30.3925762" y="-30.42934" />
+            <Vector2 x="-29.86743" y="-30.42934" />
+            <Vector2 x="-29.8674221" y="18.1893387" />
+            <Vector2 x="-30.3925686" y="18.1893387" />
+          </ArrayOfVector2>
+        </Body>
+      </StaticLayout>
+      <StaticLayout>
+        <Owner>9795501d-4df1-435a-a990-41fa976bd30f</Owner>
+        <Body>
+          <ArrayOfVector2>
+            <Vector2 x="26.8174229" y="-30.42934" />
+            <Vector2 x="27.34257" y="-30.42934" />
+            <Vector2 x="27.342577" y="18.1893387" />
+            <Vector2 x="26.81743" y="18.1893387" />
+          </ArrayOfVector2>
+        </Body>
+      </StaticLayout>
+    </Statics>
+    <Walls />
+    <Resources />
+    <Enterances>
+      <EnteranceLayout>
+        <Owner>3f2f7c4f-e7be-449e-bab0-63688ae8cfe8</Owner>
+        <Kinds>
+          <ENTITY>ACTOR1</ENTITY>
+        </Kinds>
+      </EnteranceLayout>
+    </Enterances>
+    <Strongholds>
+      <StrongholdLayout>
+        <Owner>8b0c8240-68c7-499b-acc2-a5cfdabf174d</Owner>
+        <Kinds>
+          <ENTITY>ACTOR2</ENTITY>
+        </Kinds>
+      </StrongholdLayout>
+    </Strongholds>
+    <Protals>
+      <ProtalLayout>
+        <Owner>984f8c48-2240-4a30-bf5a-2652b1bd4368</Owner>
+        <TargetRealm>maze1</TargetRealm>
+        <PassEntity>
+          <ENTITY>ACTOR1</ENTITY>
+        </PassEntity>
+      </ProtalLayout>
+    </Protals>
+    <Fields />
+  </EntityGroupLayout>
+</ArrayOfEntityGroupLayout>

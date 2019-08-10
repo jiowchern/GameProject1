@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DD0DAEE5-5F0F-4A40-9A0A-3533077CB553}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Regulus.Project.GameProject1.Data</RootNamespace>
+    <AssemblyName>Regulus.Project.GameProject1.Data</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account.cs" />
+    <Compile Include="ACCOUNT_REQUEST_RESULT.cs" />
+    <Compile Include="ACTOR_STATUS_TYPE.cs" />
+    <Compile Include="Determination.cs" />
+    <Compile Include="Effect.cs" />
+    <Compile Include="Energy.cs" />
+    <Compile Include="ENTITY.cs" />
+    <Compile Include="EntityData.cs" />
+    <Compile Include="EntityGroupLayout.cs" />
+    <Compile Include="EntityLayout.cs" />
+    <Compile Include="EquipStatus.cs" />
+    <Compile Include="EQUIP_PART.cs" />
+    <Compile Include="GamePlayerRecord.cs" />
+    <Compile Include="GrahamConvexHull.cs" />
+    <Compile Include="IAccountCreator.cs" />
+    <Compile Include="IAccountFinder.cs" />
+    <Compile Include="IAccountManager.cs" />
+    <Compile Include="IAccountStatus.cs" />
+    <Compile Include="IBattleSkill.cs" />
+    <Compile Include="ICastSkill.cs" />
+    <Compile Include="IDevelopActor.cs" />
+    <Compile Include="IEmotion.cs" />
+    <Compile Include="IEquipmentNotifier.cs" />
+    <Compile Include="IInventoryController.cs" />
+    <Compile Include="IInventoryNotifier.cs" />
+    <Compile Include="IJumpMap.cs" />
+    <Compile Include="IMakeSkill.cs" />
+    <Compile Include="IMoveController.cs" />
+    <Compile Include="IBagNotifier.cs" />
+    <Compile Include="IPlayerProperys.cs" />
+    <Compile Include="IPlayerRecordHandler.cs" />
+    <Compile Include="IQuitable.cs" />
+    <Compile Include="INormalSkill.cs" />
+    <Compile Include="IStorage.cs" />
+    <Compile Include="IStorageCompetnces.cs" />
+    <Compile Include="Item.cs" />
+    <Compile Include="ItemEffect.cs" />
+    <Compile Include="ItemFormula.cs" />
+    <Compile Include="ItemFormulaNeed.cs" />
+    <Compile Include="ItemPrototype.cs" />
+    <Compile Include="ITEM_FEATURES.cs" />
+    <Compile Include="IVerify.cs" />
+    <Compile Include="IVersion.cs" />
+    <Compile Include="IVisible.cs" />
+    <Compile Include="LEVEL_UNIT.cs" />
+    <Compile Include="Location.cs" />
+    <Compile Include="PortalData.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RealmInfomation.cs" />
+    <Compile Include="Resource.cs" />
+    <Compile Include="SkillData.cs" />
+    <Compile Include="Translate.cs" />
+    <Compile Include="VisibleStatus.cs" />
+    <Compile Include="WallData.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Regulus\Library\PureLib\Regulus.Library.csproj">
+      <Project>{2f28aa04-316d-4c20-bf46-987d4a59691d}</Project>
+      <Name>Regulus.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Regulus\Library\Remoting\Regulus.Remote.csproj">
+      <Project>{a4cfce46-bda8-4416-a1bb-77bd80514019}</Project>
+      <Name>Regulus.Remote</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

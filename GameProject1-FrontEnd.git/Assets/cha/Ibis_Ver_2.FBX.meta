@@ -1,0 +1,173 @@
+fileFormatVersion: 2
+guid: 1772a900f56864c41b5c00e93d290956
+timeCreated: 1480689885
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Bip001
+    100002: Bip001 Head
+    100004: Bip001 Neck
+    100006: Bip001 Pelvis
+    100008: Bip001 Spine
+    100010: Bip001 Spine1
+    100012: Bip001 Spine2
+    100014: cheek
+    100016: equip_Lower_body_HotPants01
+    100018: equip_Lower_body_HotPants02
+    100020: equip_Soles_shoe001
+    100022: equip_thigh_L
+    100024: equip_Upper_body_Clothes01
+    100026: equip_Upper_body_Clothes02
+    100028: hair_B
+    100030: hair_C
+    100032: hair_D
+    100034: hair_E
+    100036: HairBack_DS_new01
+    100038: Ibis_body
+    100040: Ibis_body003
+    100042: Ibis_head
+    100044: //RootNode
+    100046: Object
+    100048: Object008
+    400000: Bip001
+    400002: Bip001 Head
+    400004: Bip001 Neck
+    400006: Bip001 Pelvis
+    400008: Bip001 Spine
+    400010: Bip001 Spine1
+    400012: Bip001 Spine2
+    400014: cheek
+    400016: equip_Lower_body_HotPants01
+    400018: equip_Lower_body_HotPants02
+    400020: equip_Soles_shoe001
+    400022: equip_thigh_L
+    400024: equip_Upper_body_Clothes01
+    400026: equip_Upper_body_Clothes02
+    400028: hair_B
+    400030: hair_C
+    400032: hair_D
+    400034: hair_E
+    400036: HairBack_DS_new01
+    400038: Ibis_body
+    400040: Ibis_body003
+    400042: Ibis_head
+    400044: //RootNode
+    400046: Object
+    400048: Object008
+    2300000: cheek
+    2300002: equip_Lower_body_HotPants01
+    2300004: equip_Lower_body_HotPants02
+    2300006: equip_Soles_shoe001
+    2300008: equip_thigh_L
+    2300010: equip_Upper_body_Clothes01
+    2300012: equip_Upper_body_Clothes02
+    2300014: hair_B
+    2300016: hair_C
+    2300018: hair_D
+    2300020: hair_E
+    2300022: HairBack_DS_new01
+    2300024: Ibis_body
+    2300026: Ibis_body003
+    2300028: Ibis_head
+    2300030: Object
+    2300032: Object008
+    3300000: cheek
+    3300002: equip_Lower_body_HotPants01
+    3300004: equip_Lower_body_HotPants02
+    3300006: equip_Soles_shoe001
+    3300008: equip_thigh_L
+    3300010: equip_Upper_body_Clothes01
+    3300012: equip_Upper_body_Clothes02
+    3300014: hair_B
+    3300016: hair_C
+    3300018: hair_D
+    3300020: hair_E
+    3300022: HairBack_DS_new01
+    3300024: Ibis_body
+    3300026: Ibis_body003
+    3300028: Ibis_head
+    3300030: Object
+    3300032: Object008
+    4300000: Ibis_body
+    4300002: cheek
+    4300004: hair_C
+    4300006: hair_B
+    4300008: hair_D
+    4300010: hair_E
+    4300012: Ibis_head
+    4300014: equip_Upper_body_Clothes01
+    4300016: equip_Lower_body_HotPants01
+    4300018: equip_Lower_body_HotPants02
+    4300020: equip_Soles_shoe001
+    4300022: equip_Upper_body_Clothes02
+    4300024: Ibis_body003
+    4300026: Object008
+    4300028: equip_thigh_L
+    4300030: Object
+    4300032: HairBack_DS_new01
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

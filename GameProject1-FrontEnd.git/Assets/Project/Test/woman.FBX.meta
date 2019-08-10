@@ -1,0 +1,1313 @@
+fileFormatVersion: 2
+guid: 34528b1afc6f3fa4ca0663160f6400c9
+timeCreated: 1480085666
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Hub001
+    100002: Hub002
+    100004: Hub003
+    100006: LArm11
+    100008: LArm12
+    100010: LArm13
+    100012: LArm21
+    100014: LArm22
+    100016: LArm23
+    100018: LArmCollarbone
+    100020: LArmDigit11
+    100022: LArmDigit12
+    100024: LArmDigit13
+    100026: LArmDigit21
+    100028: LArmDigit22
+    100030: LArmDigit23
+    100032: LArmDigit31
+    100034: LArmDigit32
+    100036: LArmDigit33
+    100038: LArmDigit41
+    100040: LArmDigit42
+    100042: LArmDigit43
+    100044: LArmDigit51
+    100046: LArmDigit52
+    100048: LArmDigit53
+    100050: LArmPalm
+    100052: LLeg11
+    100054: LLeg12
+    100056: LLeg21
+    100058: LLeg22
+    100060: LLeg23
+    100062: LLegAnkle
+    100064: LLegDigit11
+    100066: LLegDigit12
+    100068: LLegDigit13
+    100070: LLegDigit21
+    100072: LLegDigit22
+    100074: LLegDigit23
+    100076: LLegDigit31
+    100078: LLegDigit32
+    100080: LLegDigit33
+    100082: LLegDigit41
+    100084: LLegDigit42
+    100086: LLegDigit43
+    100088: LLegDigit51
+    100090: LLegDigit52
+    100092: LLegDigit53
+    100094: LLegPlatform
+    100096: RArm11
+    100098: RArm12
+    100100: RArm13
+    100102: RArm21
+    100104: RArm22
+    100106: RArm23
+    100108: RArmCollarbone
+    100110: RArmDigit11
+    100112: RArmDigit12
+    100114: RArmDigit13
+    100116: RArmDigit21
+    100118: RArmDigit22
+    100120: RArmDigit23
+    100122: RArmDigit31
+    100124: RArmDigit32
+    100126: RArmDigit33
+    100128: RArmDigit41
+    100130: RArmDigit42
+    100132: RArmDigit43
+    100134: RArmDigit51
+    100136: RArmDigit52
+    100138: RArmDigit53
+    100140: RArmPalm
+    100142: RLeg11
+    100144: RLeg12
+    100146: RLeg21
+    100148: RLeg22
+    100150: RLeg23
+    100152: RLegAnkle
+    100154: RLegDigit11
+    100156: RLegDigit12
+    100158: RLegDigit13
+    100160: RLegDigit21
+    100162: RLegDigit22
+    100164: RLegDigit23
+    100166: RLegDigit31
+    100168: RLegDigit32
+    100170: RLegDigit33
+    100172: RLegDigit41
+    100174: RLegDigit42
+    100176: RLegDigit43
+    100178: RLegDigit51
+    100180: RLegDigit52
+    100182: RLegDigit53
+    100184: RLegPlatform
+    100186: Sphere010
+    100188: Spine1
+    100190: Spine1 1
+    100192: Spine2
+    100194: Spine2 1
+    100196: Spine3
+    100198: Spine4
+    100200: //RootNode
+    100202: "\u5634\u7259"
+    100204: "\u5C0F\u660ELArmIKTarget"
+    100206: "\u5C0F\u660ERArmIKTarget"
+    100208: "\u700F\u6D77\u4E2D"
+    100210: "\u700F\u6D77\u5074"
+    100212: "\u773C\u767D"
+    100214: "\u773C\u767D001"
+    100216: "\u773C\u77B3\u5B54"
+    100218: "\u8EAB\u9AD4"
+    100220: "\u9577\u9AEE"
+    100222: "\u982D"
+    100224: "\u99AC\u5C3E"
+    100226: "\u9AEE\u70B8\u6BDB"
+    100228: "\u9AEE\u9B22\u89D2"
+    400000: Hub001
+    400002: Hub002
+    400004: Hub003
+    400006: LArm11
+    400008: LArm12
+    400010: LArm13
+    400012: LArm21
+    400014: LArm22
+    400016: LArm23
+    400018: LArmCollarbone
+    400020: LArmDigit11
+    400022: LArmDigit12
+    400024: LArmDigit13
+    400026: LArmDigit21
+    400028: LArmDigit22
+    400030: LArmDigit23
+    400032: LArmDigit31
+    400034: LArmDigit32
+    400036: LArmDigit33
+    400038: LArmDigit41
+    400040: LArmDigit42
+    400042: LArmDigit43
+    400044: LArmDigit51
+    400046: LArmDigit52
+    400048: LArmDigit53
+    400050: LArmPalm
+    400052: LLeg11
+    400054: LLeg12
+    400056: LLeg21
+    400058: LLeg22
+    400060: LLeg23
+    400062: LLegAnkle
+    400064: LLegDigit11
+    400066: LLegDigit12
+    400068: LLegDigit13
+    400070: LLegDigit21
+    400072: LLegDigit22
+    400074: LLegDigit23
+    400076: LLegDigit31
+    400078: LLegDigit32
+    400080: LLegDigit33
+    400082: LLegDigit41
+    400084: LLegDigit42
+    400086: LLegDigit43
+    400088: LLegDigit51
+    400090: LLegDigit52
+    400092: LLegDigit53
+    400094: LLegPlatform
+    400096: RArm11
+    400098: RArm12
+    400100: RArm13
+    400102: RArm21
+    400104: RArm22
+    400106: RArm23
+    400108: RArmCollarbone
+    400110: RArmDigit11
+    400112: RArmDigit12
+    400114: RArmDigit13
+    400116: RArmDigit21
+    400118: RArmDigit22
+    400120: RArmDigit23
+    400122: RArmDigit31
+    400124: RArmDigit32
+    400126: RArmDigit33
+    400128: RArmDigit41
+    400130: RArmDigit42
+    400132: RArmDigit43
+    400134: RArmDigit51
+    400136: RArmDigit52
+    400138: RArmDigit53
+    400140: RArmPalm
+    400142: RLeg11
+    400144: RLeg12
+    400146: RLeg21
+    400148: RLeg22
+    400150: RLeg23
+    400152: RLegAnkle
+    400154: RLegDigit11
+    400156: RLegDigit12
+    400158: RLegDigit13
+    400160: RLegDigit21
+    400162: RLegDigit22
+    400164: RLegDigit23
+    400166: RLegDigit31
+    400168: RLegDigit32
+    400170: RLegDigit33
+    400172: RLegDigit41
+    400174: RLegDigit42
+    400176: RLegDigit43
+    400178: RLegDigit51
+    400180: RLegDigit52
+    400182: RLegDigit53
+    400184: RLegPlatform
+    400186: Sphere010
+    400188: Spine1
+    400190: Spine1 1
+    400192: Spine2
+    400194: Spine2 1
+    400196: Spine3
+    400198: Spine4
+    400200: //RootNode
+    400202: "\u5634\u7259"
+    400204: "\u5C0F\u660ELArmIKTarget"
+    400206: "\u5C0F\u660ERArmIKTarget"
+    400208: "\u700F\u6D77\u4E2D"
+    400210: "\u700F\u6D77\u5074"
+    400212: "\u773C\u767D"
+    400214: "\u773C\u767D001"
+    400216: "\u773C\u77B3\u5B54"
+    400218: "\u8EAB\u9AD4"
+    400220: "\u9577\u9AEE"
+    400222: "\u982D"
+    400224: "\u99AC\u5C3E"
+    400226: "\u9AEE\u70B8\u6BDB"
+    400228: "\u9AEE\u9B22\u89D2"
+    2300000: Sphere010
+    2300002: "\u5634\u7259"
+    2300004: "\u700F\u6D77\u4E2D"
+    2300006: "\u700F\u6D77\u5074"
+    2300008: "\u773C\u767D"
+    2300010: "\u773C\u767D001"
+    2300012: "\u773C\u77B3\u5B54"
+    2300014: "\u9577\u9AEE"
+    2300016: "\u982D"
+    2300018: "\u99AC\u5C3E"
+    2300020: "\u9AEE\u70B8\u6BDB"
+    2300022: "\u9AEE\u9B22\u89D2"
+    3300000: Sphere010
+    3300002: "\u5634\u7259"
+    3300004: "\u700F\u6D77\u4E2D"
+    3300006: "\u700F\u6D77\u5074"
+    3300008: "\u773C\u767D"
+    3300010: "\u773C\u767D001"
+    3300012: "\u773C\u77B3\u5B54"
+    3300014: "\u9577\u9AEE"
+    3300016: "\u982D"
+    3300018: "\u99AC\u5C3E"
+    3300020: "\u9AEE\u70B8\u6BDB"
+    3300022: "\u9AEE\u9B22\u89D2"
+    4300000: "\u8EAB\u9AD4"
+    4300002: "\u773C\u77B3\u5B54"
+    4300004: "\u773C\u767D"
+    4300006: "\u5634\u7259"
+    4300008: "\u773C\u767D001"
+    4300010: "\u982D"
+    4300012: "\u9577\u9AEE"
+    4300014: "\u9AEE\u70B8\u6BDB"
+    4300016: "\u99AC\u5C3E"
+    4300018: "\u700F\u6D77\u4E2D"
+    4300020: "\u700F\u6D77\u5074"
+    4300022: "\u9AEE\u9B22\u89D2"
+    4300024: Sphere010
+    9500000: //RootNode
+    13700000: "\u8EAB\u9AD4"
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human:
+    - boneName: Hub001
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LLeg11
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: RLeg11
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LLeg21
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: RLeg21
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LLegAnkle
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: RLegAnkle
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Spine2
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Spine3
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Spine1 1
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Spine2 1
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LArmCollarbone
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: RArmCollarbone
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LArm11
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: RArm11
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LArm13
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: RArm21
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LArm22
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: RArm23
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LLegDigit11
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: RLegDigit11
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: "\u700F\u6D77\u4E2D"
+      humanName: LeftEye
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Sphere010
+      humanName: RightEye
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LArmDigit21
+      humanName: Left Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LArmDigit22
+      humanName: Left Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LArmDigit23
+      humanName: Left Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LArmDigit31
+      humanName: Left Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LArmDigit32
+      humanName: Left Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LArmDigit33
+      humanName: Left Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LArmDigit41
+      humanName: Left Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LArmDigit42
+      humanName: Left Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LArmDigit43
+      humanName: Left Ring Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LArmDigit51
+      humanName: Left Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LArmDigit52
+      humanName: Left Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LArmDigit53
+      humanName: Left Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: RArmDigit11
+      humanName: Right Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: RArmDigit12
+      humanName: Right Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: RArmDigit21
+      humanName: Right Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: RArmDigit22
+      humanName: Right Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: RArmDigit23
+      humanName: Right Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: RArmDigit31
+      humanName: Right Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: RArmDigit32
+      humanName: Right Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: RArmDigit33
+      humanName: Right Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: RArmDigit41
+      humanName: Right Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: RArmDigit42
+      humanName: Right Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: RArmDigit43
+      humanName: Right Ring Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: RArmDigit51
+      humanName: Right Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: RArmDigit52
+      humanName: Right Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: RArmDigit53
+      humanName: Right Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: woman(Clone)
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Hub001
+      position: {x: -0.000000009483933, y: 0.8147186, z: -0.015140034}
+      rotation: {x: 0.49999997, y: -0.49999997, z: -0.50000006, w: 0.50000006}
+      scale: {x: 25.4, y: 25.4, z: 25.4}
+      transformModified: 1
+    - name: LLeg11
+      position: {x: -0, y: 0, z: 0.0024999992}
+      rotation: {x: 0.022493493, y: 0.999711, z: 0.00722956, w: -0.004442234}
+      scale: {x: 0.99999994, y: 0.99999994, z: 0.99999976}
+      transformModified: 1
+    - name: LLeg12
+      position: {x: -0.006863115, y: 0, z: 0}
+      rotation: {x: 1.6007105e-10, y: 4.6566123e-10, z: -7.453888e-20, w: 1}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000001}
+      transformModified: 1
+    - name: LLeg21
+      position: {x: -0.0068631186, y: 0.000000034332274, z: 0.0000000104904165}
+      rotation: {x: 0.0010443841, y: -0.0003597111, z: -0.0029040496, w: 0.9999952}
+      scale: {x: 1.0000004, y: 1.0000002, z: 1.0000004}
+      transformModified: 1
+    - name: LLeg22
+      position: {x: -0.004806753, y: 0, z: 0}
+      rotation: {x: -2.0372683e-10, y: -4.6566123e-10, z: -0.0000000018626449, w: 1}
+      scale: {x: 1.0000001, y: 0.99999994, z: 1}
+      transformModified: 1
+    - name: LLeg23
+      position: {x: -0.004806752, y: -1.1920928e-10, z: 0}
+      rotation: {x: -2.0372683e-10, y: -4.6566123e-10, z: -0.0000000018626449, w: 1}
+      scale: {x: 1.0000001, y: 0.99999994, z: 1}
+      transformModified: 1
+    - name: LLegAnkle
+      position: {x: -0.0048067532, y: 2.3841856e-10, z: -2.3841856e-10}
+      rotation: {x: 0.006134323, y: -0.0085630175, z: 0.022132704, w: 0.99969953}
+      scale: {x: 0.9999999, y: 0.9999998, z: 0.99999994}
+      transformModified: 1
+    - name: LLegDigit11
+      position: {x: -0.0029016912, y: 0.0048478995, z: 0.0011496542}
+      rotation: {x: -0.0030004398, y: 0.0029743903, z: -0.705768, w: 0.70843047}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: LLegDigit12
+      position: {x: -0.0009216272, y: 0, z: 0}
+      rotation: {x: -0.000000012927643, y: -0.000000014107373, z: -1.8237509e-16,
+        w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: LLegDigit13
+      position: {x: -0.00055184815, y: 0, z: 0}
+      rotation: {x: -0.000000016437028, y: -0.0000000018676762, z: -0.043619394, w: 0.99904823}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1}
+      transformModified: 1
+    - name: LLegDigit21
+      position: {x: -0.003103118, y: 0.0049680145, z: 0.00028037402}
+      rotation: {x: -0.003127331, y: 0.002840682, z: -0.7359976, w: 0.676971}
+      scale: {x: 1.0000001, y: 1, z: 1}
+      transformModified: 1
+    - name: LLegDigit22
+      position: {x: -0.0011477644, y: 0, z: 0}
+      rotation: {x: -1.4210855e-14, y: 1.06557e-15, z: 0.00000005960466, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: LLegDigit23
+      position: {x: -0.0003330302, y: 0, z: 0}
+      rotation: {x: 0.00000003928722, y: 0.000000008803261, z: 0.13052621, w: 0.9914449}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: LLegDigit31
+      position: {x: -0.003095268, y: 0.0050409874, z: -0.00041630885}
+      rotation: {x: -0.003127331, y: 0.002840682, z: -0.7359976, w: 0.676971}
+      scale: {x: 1.0000001, y: 1, z: 1}
+      transformModified: 1
+    - name: LLegDigit32
+      position: {x: -0.0009137205, y: 0, z: 0}
+      rotation: {x: -1.4210855e-14, y: 1.06557e-15, z: 0.00000005960466, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: LLegDigit33
+      position: {x: -0.00041754768, y: 0, z: 0}
+      rotation: {x: 0.00000003928722, y: 0.000000008803261, z: 0.13052621, w: 0.9914449}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: LLegDigit41
+      position: {x: -0.0031044849, y: 0.0049372716, z: -0.0010620634}
+      rotation: {x: -0.003127331, y: 0.002840682, z: -0.7359976, w: 0.676971}
+      scale: {x: 1.0000001, y: 1, z: 1}
+      transformModified: 1
+    - name: LLegDigit42
+      position: {x: -0.00070124405, y: 0, z: 0}
+      rotation: {x: -1.4210855e-14, y: 1.06557e-15, z: 0.00000005960466, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: LLegDigit43
+      position: {x: -0.0003200147, y: 0, z: 0}
+      rotation: {x: 0.00000003928722, y: 0.000000008803261, z: 0.13052621, w: 0.9914449}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: LLegDigit51
+      position: {x: -0.0030275718, y: 0.0048601357, z: -0.0016721172}
+      rotation: {x: -0.003127331, y: 0.002840682, z: -0.7359976, w: 0.676971}
+      scale: {x: 1.0000001, y: 1, z: 1}
+      transformModified: 1
+    - name: LLegDigit52
+      position: {x: -0.0005239014, y: 5.960464e-11, z: 2.3841856e-10}
+      rotation: {x: -0.00000001471824, y: 0.000000011848535, z: 0.16341905, w: 0.98655677}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: LLegDigit53
+      position: {x: -0.00023885368, y: 1.1920928e-10, z: 0}
+      rotation: {x: 0.000000093218, y: -0.00000004257232, z: 0.053984642, w: 0.9985418}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1}
+      transformModified: 1
+    - name: RLeg11
+      position: {x: -0, y: 0, z: -0.0024999978}
+      rotation: {x: 0.022543367, y: 0.9997106, z: -0.007226194, w: 0.004277414}
+      scale: {x: 1.0000001, y: 1.0000001, z: 0.99999994}
+      transformModified: 1
+    - name: RLeg12
+      position: {x: -0.0068631168, y: 2.3841856e-10, z: 0}
+      rotation: {x: 3.3469408e-10, y: -4.656613e-10, z: -0.0000000018626451, w: 1}
+      scale: {x: 1, y: 0.9999999, z: 0.99999994}
+      transformModified: 1
+    - name: RLeg21
+      position: {x: -0.0068631168, y: 0.000000034093855, z: -0.0000000104904165}
+      rotation: {x: -0.0010463537, y: 0.000039342463, z: -0.0030119182, w: 0.99999493}
+      scale: {x: 0.9999999, y: 0.9999998, z: 1.0000001}
+      transformModified: 1
+    - name: RLeg22
+      position: {x: -0.004806752, y: 0, z: 0}
+      rotation: {x: 2.910383e-10, y: -4.656613e-10, z: 0.0000000018626451, w: 1}
+      scale: {x: 1, y: 1, z: 0.99999994}
+      transformModified: 1
+    - name: RLeg23
+      position: {x: -0.004806753, y: 0, z: 0}
+      rotation: {x: 2.910383e-10, y: -4.656613e-10, z: 0.0000000018626451, w: 1}
+      scale: {x: 1, y: 1, z: 0.99999994}
+      transformModified: 1
+    - name: RLegAnkle
+      position: {x: -0.0048067532, y: 0.0000001424551, z: -0.000000012636184}
+      rotation: {x: -0.0061300145, y: 0.008717522, z: 0.022192815, w: 0.9996969}
+      scale: {x: 0.9999998, y: 0.9999999, z: 0.9999999}
+      transformModified: 1
+    - name: RLegDigit11
+      position: {x: -0.0029016917, y: 0.0048478995, z: -0.001149654}
+      rotation: {x: 0.0030005064, y: -0.0029742606, z: -0.705768, w: 0.70843047}
+      scale: {x: 1, y: 1.0000001, z: 1}
+      transformModified: 1
+    - name: RLegDigit12
+      position: {x: -0.000921627, y: 5.960464e-11, z: 0}
+      rotation: {x: -0.000000012927636, y: -0.000000014107367, z: 0.00000000372529,
+        w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: RLegDigit13
+      position: {x: -0.00055184885, y: 0, z: 0}
+      rotation: {x: -0.000000016437017, y: -0.0000000018676627, z: -0.04361939, w: 0.99904823}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1}
+      transformModified: 1
+    - name: RLegDigit21
+      position: {x: -0.0031031184, y: 0.0049680155, z: -0.00028037402}
+      rotation: {x: 0.0031273807, y: -0.0028405497, z: -0.7359976, w: 0.676971}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1}
+      transformModified: 1
+    - name: RLegDigit22
+      position: {x: -0.0011477646, y: -2.980232e-11, z: 0}
+      rotation: {x: -1.4210855e-14, y: 8.171e-15, z: 0.000000059604638, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: RLegDigit23
+      position: {x: -0.0003330302, y: 0, z: 0}
+      rotation: {x: 0.000000039287226, y: 0.000000008803256, z: 0.13052619, w: 0.9914449}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: RLegDigit31
+      position: {x: -0.0030952687, y: 0.005040989, z: 0.0004163086}
+      rotation: {x: 0.0031273807, y: -0.0028405497, z: -0.7359976, w: 0.676971}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1}
+      transformModified: 1
+    - name: RLegDigit32
+      position: {x: -0.0009137205, y: 0, z: 0}
+      rotation: {x: -1.4210855e-14, y: 8.171e-15, z: 0.000000059604638, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: RLegDigit33
+      position: {x: -0.0004175479, y: 2.980232e-11, z: 0}
+      rotation: {x: 0.000000039287226, y: 0.000000008803256, z: 0.13052619, w: 0.9914449}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: RLegDigit41
+      position: {x: -0.0031044856, y: 0.0049372725, z: 0.0010620629}
+      rotation: {x: 0.0031273807, y: -0.0028405497, z: -0.7359976, w: 0.676971}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1}
+      transformModified: 1
+    - name: RLegDigit42
+      position: {x: -0.00070124405, y: 0, z: 0}
+      rotation: {x: -1.4210855e-14, y: 8.171e-15, z: 0.000000059604638, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: RLegDigit43
+      position: {x: -0.00032001446, y: 0, z: 0}
+      rotation: {x: 0.000000039287226, y: 0.000000008803256, z: 0.13052619, w: 0.9914449}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: RLegDigit51
+      position: {x: -0.0030275725, y: 0.0048601367, z: 0.0016721169}
+      rotation: {x: 0.0031273807, y: -0.0028405497, z: -0.7359976, w: 0.676971}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1}
+      transformModified: 1
+    - name: RLegDigit52
+      position: {x: -0.0005239014, y: 0, z: 2.3841856e-10}
+      rotation: {x: 0.00000003792162, y: 0.000000020568113, z: 0.16341904, w: 0.98655677}
+      scale: {x: 1.0000001, y: 1, z: 1}
+      transformModified: 1
+    - name: RLegDigit53
+      position: {x: -0.00023885368, y: 0, z: 0}
+      rotation: {x: 0.000000012736833, y: -0.000000044380176, z: 0.05398469, w: 0.9985418}
+      scale: {x: 0.99999994, y: 1, z: 1}
+      transformModified: 1
+    - name: Spine1
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 3.8881823e-10, y: -0.000000019977596, z: -0.0798376, w: 0.9968079}
+      scale: {x: 0.99999994, y: 0.99999994, z: 1}
+      transformModified: 1
+    - name: Spine2
+      position: {x: -0.0033245408, y: -4.768371e-10, z: 0}
+      rotation: {x: 6.934309e-10, y: 0.0000000044939545, z: 0.04942854, w: 0.9987777}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Spine3
+      position: {x: -0.0028671569, y: 0, z: 0}
+      rotation: {x: -5.034745e-13, y: 0.000000016581367, z: 0.08486216, w: 0.9963927}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1}
+      transformModified: 1
+    - name: Spine4
+      position: {x: -0.0026125524, y: 0, z: 7.105427e-18}
+      rotation: {x: 4.2320566e-10, y: 0.0000000050090505, z: 0.00025794285, w: 1}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1}
+      transformModified: 1
+    - name: Hub002
+      position: {x: -0.0043204227, y: 0, z: -5.6843415e-17}
+      rotation: {x: 2.1543398e-10, y: -0.0000000060681393, z: -0.054720987, w: 0.9985017}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1}
+      transformModified: 1
+    - name: LArmCollarbone
+      position: {x: -0, y: 0, z: 0.0012499997}
+      rotation: {x: -0, y: 0.7071068, z: 0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: LArm11
+      position: {x: -0.0031554669, y: 0, z: 0}
+      rotation: {x: -0.011799061, y: -0.00000004370568, z: -9.611493e-10, w: 0.9999304}
+      scale: {x: 0.99999994, y: 0.99999994, z: 0.9999999}
+      transformModified: 1
+    - name: LArm12
+      position: {x: -0.002859464, y: -5.960464e-11, z: 0}
+      rotation: {x: 0, y: 0, z: -2.942091e-15, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: LArm13
+      position: {x: -0.0028594634, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: -2.942091e-15, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: LArm21
+      position: {x: -0.0028594644, y: 0, z: 0}
+      rotation: {x: 0.00008154636, y: -0.0014574635, z: -0.017536657, w: 0.9998452}
+      scale: {x: 1.0000001, y: 1.0000002, z: 1}
+      transformModified: 1
+    - name: LArm22
+      position: {x: -0.0020403755, y: 1.1920928e-10, z: 0}
+      rotation: {x: 0, y: 0, z: -5.0931707e-11, w: 1}
+      scale: {x: 0.99999994, y: 1, z: 1}
+      transformModified: 1
+    - name: LArm23
+      position: {x: -0.0020403776, y: -1.1920928e-10, z: -0.000000003814697}
+      rotation: {x: 0, y: 0, z: -5.0931707e-11, w: 1}
+      scale: {x: 0.99999994, y: 1, z: 1}
+      transformModified: 1
+    - name: LArmPalm
+      position: {x: -0.0020403746, y: 2.3841856e-10, z: 0}
+      rotation: {x: -0.70707023, y: -0.0065012663, z: 0.0071105994, w: 0.70707774}
+      scale: {x: 0.9999999, y: 1.0000001, z: 0.9999999}
+      transformModified: 1
+    - name: LArmDigit11
+      position: {x: -0.0009540786, y: -0.00019198988, z: 0.0011663603}
+      rotation: {x: 0.6479054, y: 0.27417794, z: -0.2828249, w: 0.6519625}
+      scale: {x: 1.0000001, y: 1.0000004, z: 1}
+      transformModified: 1
+    - name: LArmDigit12
+      position: {x: -0.0011166924, y: 0, z: 0}
+      rotation: {x: -0.0014966824, y: -0.021399247, z: 0.09384807, w: 0.9953554}
+      scale: {x: 1, y: 1.0000001, z: 0.9999999}
+      transformModified: 1
+    - name: LArmDigit13
+      position: {x: -0.00088689226, y: 0, z: 0.000000003814697}
+      rotation: {x: 0.001620842, y: 0.009167526, z: 0.17363952, w: 0.9847653}
+      scale: {x: 1.0000001, y: 0.99999994, z: 0.9999997}
+      transformModified: 1
+    - name: LArmDigit21
+      position: {x: -0.0028249987, y: 0.000097930904, z: 0.0011562501}
+      rotation: {x: 0.0000000037252903, y: 4.0017767e-10, z: -0.0000000010477379,
+        w: 1}
+      scale: {x: 1, y: 1, z: 1.0000005}
+      transformModified: 1
+    - name: LArmDigit22
+      position: {x: -0.0013150462, y: -0.000000007629394, z: 0}
+      rotation: {x: 1.3594879e-19, y: 3.8926373e-10, z: -3.4924597e-10, w: 1}
+      scale: {x: 1, y: 1, z: 1.0000005}
+      transformModified: 1
+    - name: LArmDigit23
+      position: {x: -0.00087289995, y: 0, z: 1.1920928e-10}
+      rotation: {x: -9.313226e-10, y: 0.0000000013315002, z: -9.313226e-10, w: 1}
+      scale: {x: 1, y: 1, z: 1.0000005}
+      transformModified: 1
+    - name: LArmDigit31
+      position: {x: -0.0028249987, y: 0.000097927084, z: 0.00038541667}
+      rotation: {x: 0.0000000037252903, y: 4.0017767e-10, z: -0.0000000010477379,
+        w: 1}
+      scale: {x: 1, y: 1, z: 1.0000005}
+      transformModified: 1
+    - name: LArmDigit32
+      position: {x: -0.0014707698, y: 0.000000003814697, z: 0}
+      rotation: {x: 1.3594879e-19, y: 3.8926373e-10, z: -3.4924597e-10, w: 1}
+      scale: {x: 1, y: 1, z: 1.0000005}
+      transformModified: 1
+    - name: LArmDigit33
+      position: {x: -0.0010838794, y: -0.000000003814697, z: 5.960464e-11}
+      rotation: {x: -9.313226e-10, y: 0.0000000013315002, z: -9.313226e-10, w: 1}
+      scale: {x: 1, y: 1, z: 1.0000005}
+      transformModified: 1
+    - name: LArmDigit41
+      position: {x: -0.0028249987, y: 0.000097927084, z: -0.0003854168}
+      rotation: {x: 0.0000000037252903, y: 4.0017767e-10, z: -0.0000000010477379,
+        w: 1}
+      scale: {x: 1, y: 1, z: 1.0000005}
+      transformModified: 1
+    - name: LArmDigit42
+      position: {x: -0.0013451194, y: 0, z: 1.1920928e-10}
+      rotation: {x: 1.3594879e-19, y: 3.8926373e-10, z: -3.4924597e-10, w: 1}
+      scale: {x: 1, y: 1, z: 1.0000005}
+      transformModified: 1
+    - name: LArmDigit43
+      position: {x: -0.00093952747, y: 0.000000003814697, z: 0}
+      rotation: {x: -9.313226e-10, y: 0.0000000013315002, z: -9.313226e-10, w: 1}
+      scale: {x: 1, y: 1, z: 1.0000005}
+      transformModified: 1
+    - name: LArmDigit51
+      position: {x: -0.0028249987, y: 0.00009792327, z: -0.0011562499}
+      rotation: {x: 0.0000000037252903, y: 4.0017767e-10, z: -0.0000000010477379,
+        w: 1}
+      scale: {x: 1, y: 1, z: 1.0000005}
+      transformModified: 1
+    - name: LArmDigit52
+      position: {x: -0.0009461612, y: 0, z: -1.1920928e-10}
+      rotation: {x: 1.3594879e-19, y: 3.8926373e-10, z: -3.4924597e-10, w: 1}
+      scale: {x: 1, y: 1, z: 1.0000005}
+      transformModified: 1
+    - name: LArmDigit53
+      position: {x: -0.0007357177, y: 0.000000003814697, z: -1.1920928e-10}
+      rotation: {x: -9.313226e-10, y: 0.0000000013315002, z: -9.313226e-10, w: 1}
+      scale: {x: 1, y: 1, z: 1.0000005}
+      transformModified: 1
+    - name: RArmCollarbone
+      position: {x: -0, y: 0, z: -0.0012499996}
+      rotation: {x: -0, y: -0.7071068, z: 0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: RArm11
+      position: {x: -0.0031554669, y: 0, z: 0}
+      rotation: {x: 0.011799084, y: 0.000000043714056, z: 4.4538948e-10, w: 0.9999304}
+      scale: {x: 0.99999994, y: 0.99999994, z: 0.9999999}
+      transformModified: 1
+    - name: RArm12
+      position: {x: -0.002859464, y: 5.960464e-11, z: 0}
+      rotation: {x: 0, y: 0, z: -8.881784e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: RArm13
+      position: {x: -0.002859463, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: -8.881784e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: RArm21
+      position: {x: -0.0028594644, y: 0, z: 0}
+      rotation: {x: -0.00008150464, y: 0.001457452, z: -0.017536655, w: 0.9998452}
+      scale: {x: 1.0000001, y: 1.0000004, z: 0.99999994}
+      transformModified: 1
+    - name: RArm22
+      position: {x: -0.0020403764, y: 1.1920928e-10, z: 0}
+      rotation: {x: 0, y: 0, z: -7.6397555e-11, w: 1}
+      scale: {x: 1, y: 1, z: 1.0000001}
+      transformModified: 1
+    - name: RArm23
+      position: {x: -0.0020403776, y: -1.1920928e-10, z: 0.000000003814697}
+      rotation: {x: 0, y: 0, z: -7.6397555e-11, w: 1}
+      scale: {x: 1, y: 1, z: 1.0000001}
+      transformModified: 1
+    - name: RArmPalm
+      position: {x: -0.0020403746, y: -1.1920928e-10, z: -0.000000011444091}
+      rotation: {x: 0.7070701, y: 0.0065012053, z: 0.0071106595, w: 0.70707786}
+      scale: {x: 1, y: 1.0000002, z: 1}
+      transformModified: 1
+    - name: RArmDigit11
+      position: {x: -0.0009540767, y: -0.00019199752, z: -0.0011663599}
+      rotation: {x: -0.6479054, y: -0.274178, z: -0.28282475, w: 0.65196264}
+      scale: {x: 1, y: 1.0000002, z: 1}
+      transformModified: 1
+    - name: RArmDigit12
+      position: {x: -0.0011166934, y: 0, z: -0.000000003814697}
+      rotation: {x: 0.001502751, y: 0.008625338, z: 0.037827283, w: 0.999246}
+      scale: {x: 1, y: 1.0000001, z: 0.9999999}
+      transformModified: 1
+    - name: RArmDigit13
+      position: {x: -0.00088689226, y: 0, z: 0}
+      rotation: {x: -0.0016209306, y: -0.009167636, z: 0.17363954, w: 0.9847653}
+      scale: {x: 0.9999998, y: 1.0000005, z: 1.0000001}
+      transformModified: 1
+    - name: RArmDigit21
+      position: {x: -0.0028250006, y: 0.000097927084, z: -0.0011562497}
+      rotation: {x: 0.000000015832486, y: -8.076313e-10, z: -4.656613e-10, w: 1}
+      scale: {x: 1, y: 0.9999999, z: 1.0000004}
+      transformModified: 1
+    - name: RArmDigit22
+      position: {x: -0.0013150501, y: -0.000000003814697, z: 0}
+      rotation: {x: 4.1038746e-19, y: -0.0000000017626007, z: 2.3283064e-10, w: 1}
+      scale: {x: 1, y: 0.99999994, z: 1.0000005}
+      transformModified: 1
+    - name: RArmDigit23
+      position: {x: -0.00087289803, y: -0.000000003814697, z: 2.3841856e-10}
+      rotation: {x: 0.0000000018626454, y: -8.1854523e-10, z: 1.1641532e-10, w: 1}
+      scale: {x: 1, y: 0.9999999, z: 1.0000004}
+      transformModified: 1
+    - name: RArmDigit31
+      position: {x: -0.0028250006, y: 0.00009792327, z: -0.00038541656}
+      rotation: {x: 0.000000015832486, y: -8.076313e-10, z: -4.656613e-10, w: 1}
+      scale: {x: 1, y: 0.9999999, z: 1.0000004}
+      transformModified: 1
+    - name: RArmDigit32
+      position: {x: -0.0014707679, y: 0, z: 1.1920928e-10}
+      rotation: {x: 4.1038746e-19, y: -0.0000000017626007, z: 2.3283064e-10, w: 1}
+      scale: {x: 1, y: 0.99999994, z: 1.0000005}
+      transformModified: 1
+    - name: RArmDigit33
+      position: {x: -0.0010838794, y: -0.000000003814697, z: 0}
+      rotation: {x: 0.0000000018626454, y: -8.1854523e-10, z: 1.1641532e-10, w: 1}
+      scale: {x: 1, y: 0.9999999, z: 1.0000004}
+      transformModified: 1
+    - name: RArmDigit41
+      position: {x: -0.0028250006, y: 0.000097927084, z: 0.00038541667}
+      rotation: {x: 0.000000015832486, y: -8.076313e-10, z: -4.656613e-10, w: 1}
+      scale: {x: 1, y: 0.9999999, z: 1.0000004}
+      transformModified: 1
+    - name: RArmDigit42
+      position: {x: -0.0013451175, y: 0, z: 1.1920928e-10}
+      rotation: {x: 4.1038746e-19, y: -0.0000000017626007, z: 2.3283064e-10, w: 1}
+      scale: {x: 1, y: 0.99999994, z: 1.0000005}
+      transformModified: 1
+    - name: RArmDigit43
+      position: {x: -0.00093952933, y: 0.000000003814697, z: 0}
+      rotation: {x: 0.0000000018626454, y: -8.1854523e-10, z: 1.1641532e-10, w: 1}
+      scale: {x: 1, y: 0.9999999, z: 1.0000004}
+      transformModified: 1
+    - name: RArmDigit51
+      position: {x: -0.0028250006, y: 0.00009792327, z: 0.0011562497}
+      rotation: {x: 0.000000015832486, y: -8.076313e-10, z: -4.656613e-10, w: 1}
+      scale: {x: 1, y: 0.9999999, z: 1.0000004}
+      transformModified: 1
+    - name: RArmDigit52
+      position: {x: -0.0009461612, y: 0, z: 0}
+      rotation: {x: 4.1038746e-19, y: -0.0000000017626007, z: 2.3283064e-10, w: 1}
+      scale: {x: 1, y: 0.99999994, z: 1.0000005}
+      transformModified: 1
+    - name: RArmDigit53
+      position: {x: -0.0007357158, y: 0, z: 0}
+      rotation: {x: 0.0000000018626454, y: -8.1854523e-10, z: 1.1641532e-10, w: 1}
+      scale: {x: 1, y: 0.9999999, z: 1.0000004}
+      transformModified: 1
+    - name: Spine1 1
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -7.1054168e-15, y: 9.710828e-15, z: 2.842171e-14, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Spine2 1
+      position: {x: -0.0038586652, y: 0, z: -1.847411e-16}
+      rotation: {x: 1.4210855e-14, y: -2.3700045e-14, z: 3.367979e-28, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Hub003
+      position: {x: -0.004104965, y: 0, z: -1.9895195e-16}
+      rotation: {x: -4.74797e-28, y: -3.341087e-14, z: -1.4210855e-14, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Sphere010
+      position: {x: -0.0012667159, y: 0.00064856233, z: -1.4210854e-17}
+      rotation: {x: 0.7071068, y: -0.00000017982563, z: -0.7071068, w: -0.00000017982563}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: "\u700F\u6D77\u4E2D"
+      position: {x: -0.0012667159, y: 0.00064856233, z: -1.4210854e-17}
+      rotation: {x: 0.7071068, y: -0.00000017982563, z: -0.7071068, w: -0.00000017982563}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: "\u700F\u6D77\u5074"
+      position: {x: -0.0012667159, y: 0.00064856233, z: -1.4210854e-17}
+      rotation: {x: 0.7071068, y: -0.00000017982563, z: -0.7071068, w: -0.00000017982563}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: "\u9577\u9AEE"
+      position: {x: -0.0012667159, y: 0.00064856233, z: -1.4210854e-17}
+      rotation: {x: 0.7071068, y: -0.00000017982563, z: -0.7071068, w: -0.00000017982563}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: "\u982D"
+      position: {x: -0.000012176512, y: 0.000941385, z: 0}
+      rotation: {x: 0.7071068, y: 0.000000030908627, z: -0.7071068, w: 0.000000030908627}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: "\u99AC\u5C3E"
+      position: {x: -0.0016976928, y: -0.0044840868, z: 5.6843415e-17}
+      rotation: {x: 0.7071068, y: -0.00000017982563, z: -0.7071068, w: -0.00000017982563}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: "\u9AEE\u70B8\u6BDB"
+      position: {x: -0.0022377355, y: -0.005130585, z: -2.8421707e-17}
+      rotation: {x: 0.5609856, y: 0.43045923, z: -0.5609856, w: 0.43045923}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: "\u9AEE\u9B22\u89D2"
+      position: {x: 0.0059929346, y: -0.0020908501, z: -1.4210854e-17}
+      rotation: {x: 0.7071068, y: -0.00000017982563, z: -0.7071068, w: -0.00000017982563}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: LLegPlatform
+      position: {x: -0.087427855, y: 5.2222554e-15, z: 0.000000037875697}
+      rotation: {x: 0.49999997, y: -0.49999997, z: -0.50000006, w: 0.50000006}
+      scale: {x: 25.4, y: 25.4, z: 25.4}
+      transformModified: 1
+    - name: RLegPlatform
+      position: {x: 0.087427855, y: 5.8103406e-16, z: 0.000000022589322}
+      rotation: {x: 0.49999997, y: -0.49999997, z: -0.50000006, w: 0.50000006}
+      scale: {x: 25.4, y: 25.4, z: 25.4}
+      transformModified: 1
+    - name: "\u5634\u7259"
+      position: {x: 1.1847994e-30, y: 1.2499999, z: 0.0000000968933}
+      rotation: {x: -0.70710677, y: -0.00000006181724, z: 2.7021173e-15, w: 0.7071068}
+      scale: {x: 25.4, y: 25.4, z: 25.4}
+      transformModified: 1
+    - name: "\u5C0F\u660ELArmIKTarget"
+      position: {x: -0.55691624, y: 1.146578, z: -0.009931706}
+      rotation: {x: 0.0011207862, y: 0.9998995, z: -0.011718225, w: -0.007899586}
+      scale: {x: 25.400002, y: 25.400003, z: 25.400005}
+      transformModified: 1
+    - name: "\u5C0F\u660ERArmIKTarget"
+      position: {x: 0.55691624, y: 1.1465776, z: -0.009931804}
+      rotation: {x: -0.011718294, y: -0.007899542, z: 0.0011206891, w: 0.9998995}
+      scale: {x: 25.4, y: 25.400002, z: 25.400005}
+      transformModified: 1
+    - name: "\u773C\u767D"
+      position: {x: 2.229612e-10, y: 1.3484079, z: 0.0074076517}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 25.4, y: 25.4, z: 25.4}
+      transformModified: 1
+    - name: "\u773C\u767D001"
+      position: {x: 3.3736466e-10, y: 1.3484079, z: 0.010024898}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 25.4, y: 25.4, z: 25.4}
+      transformModified: 1
+    - name: "\u773C\u77B3\u5B54"
+      position: {x: 2.229612e-10, y: 1.3484079, z: 0.0074075907}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 25.4, y: 25.4, z: 25.4}
+      transformModified: 1
+    - name: "\u8EAB\u9AD4"
+      position: {x: -0, y: 0, z: 0.0000000022953008}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 25.4, y: 25.4, z: 25.4}
+      transformModified: 1
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 3
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

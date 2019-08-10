@@ -1,0 +1,115 @@
+fileFormatVersion: 2
+guid: 0e6be11071d75404eabece1a51a3b34d
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: corridor_ceiling
+    100002: corridor_stairs_first_floor
+    100004: corridor_stairs_middle_floor
+    100006: E02_stairs
+    100008: make_your_corridor_for_stairs
+    100010: //RootNode
+    400000: corridor_ceiling
+    400002: corridor_stairs_first_floor
+    400004: corridor_stairs_middle_floor
+    400006: E02_stairs
+    400008: make_your_corridor_for_stairs
+    400010: //RootNode
+    2300000: corridor_ceiling
+    2300002: corridor_stairs_first_floor
+    2300004: corridor_stairs_middle_floor
+    2300006: E02_stairs
+    3300000: corridor_ceiling
+    3300002: corridor_stairs_first_floor
+    3300004: corridor_stairs_middle_floor
+    3300006: E02_stairs
+    4300000: E01_stairs_last
+    4300002: handrail
+    4300004: handrailint_1
+    4300006: E01_stairs_middle_2
+    4300008: handrail_2
+    4300010: handrailint
+    4300012: E01_stairs_first
+    4300014: Cube
+    4300016: handrail_3
+    4300018: handrailint_2
+    4300020: corridor_stairs_first_floor
+    4300022: corridor_stairs_middle_floor
+    4300024: corridor_stairs_middle_floor_2
+    4300026: corridor_stairs_middle_floor_3
+    4300028: corridor_ceiling
+    4300030: E01_stairs_just_1_floor
+    4300032: Cube_2
+    4300034: handrail_4
+    4300036: handrailint_3
+    4300038: E02_stairs
+    4300040: corridor_stairs_just_1_floor
+    6400000: corridor_ceiling
+    6400002: corridor_stairs_first_floor
+    6400004: corridor_stairs_middle_floor
+    6400006: E02_stairs
+    11100000: //RootNode
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 2
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.01
+    meshCompression: 0
+    addColliders: 1
+    importBlendShapes: 1
+    swapUVChannels: 1
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15
+    secondaryUVHardAngle: 80
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
