@@ -1,6 +1,6 @@
 $msbuildPath = & ".\tool\Resolve-MSBuild.ps1"
 
-#& $msbuildPath
+& $msbuildPath
 
 if (test-path "bin"  ) {
 	Remove-Item "bin" -Recurse
