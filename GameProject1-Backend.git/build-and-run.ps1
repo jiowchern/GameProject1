@@ -15,5 +15,5 @@ copy "data/bin/debug/*.*" "bin/server"
 copy "play/bin/debug/*.*" "bin/server"
 
 cd "./bin/server"
-& "./Regulus.Application.Server.exe" # "launchini" "config.ini"
+& "./Regulus.Application.Server.exe" "launchini" "config.ini"
 
