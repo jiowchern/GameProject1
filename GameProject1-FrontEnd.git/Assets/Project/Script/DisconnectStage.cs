@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-class DisconnectStage : Regulus.Utility.IStage
+class DisconnectStage : Regulus.Utility.IStatus
 {
 
     public Action DoneEvent;
@@ -16,7 +16,7 @@ class DisconnectStage : Regulus.Utility.IStage
     }
 
 
-    void Regulus.Utility.IStage.Enter()
+    void Regulus.Utility.IStatus.Enter()
     {
         if (notifier.Ghosts.Length == 0)
             DoneEvent();
@@ -36,13 +36,13 @@ class DisconnectStage : Regulus.Utility.IStage
         obj.Disconnect();
     }
 
-    void Regulus.Utility.IStage.Leave()
+    void Regulus.Utility.IStatus.Leave()
     {
         notifier.Unsupply -= notifier_Unsupply;
         notifier.Supply -= notifier_Supply;
     }
 
-    void Regulus.Utility.IStage.Update()
+    void Regulus.Utility.IStatus.Update()
     {
 
     }

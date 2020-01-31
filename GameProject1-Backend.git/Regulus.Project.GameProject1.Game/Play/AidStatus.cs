@@ -10,7 +10,7 @@ using Regulus.Utility;
 
 namespace Regulus.Project.GameProject1.Game.Play
 {
-    internal class AidStatus : IStage
+    internal class AidStatus : IStatus
     {
         private readonly Guid _ItemId;
 
@@ -43,7 +43,7 @@ namespace Regulus.Project.GameProject1.Game.Play
             _ItemId = item_id;
         }
 
-        void IStage.Enter()
+        void IStatus.Enter()
         {
             _DatumPosition = _Player.GetPosition();
             _Player.Aid();
@@ -51,7 +51,7 @@ namespace Regulus.Project.GameProject1.Game.Play
             _TimeCounter.Reset();
         }
 
-        void IStage.Leave()
+        void IStatus.Leave()
         {
             if (_Complete)
             {
@@ -73,7 +73,7 @@ namespace Regulus.Project.GameProject1.Game.Play
             }
         }
 
-        void IStage.Update()
+        void IStatus.Update()
         {
             var second = _TimeCounter.Second;
             var poly = _Caster.FindDetermination(_CurrentCastTime, second);

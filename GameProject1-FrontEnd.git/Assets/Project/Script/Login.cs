@@ -34,12 +34,12 @@ public class Login : MonoBehaviour
 
     
     private IUser _User;
-	private readonly Regulus.Utility.StageMachine _Machine;
+	private readonly Regulus.Utility.StatusMachine _Machine;
 	
 
 	public Login()
 	{
-		_Machine = new StageMachine();
+		_Machine = new StatusMachine();
 	}
 	// Use this for initialization
 

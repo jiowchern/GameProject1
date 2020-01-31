@@ -9,7 +9,7 @@ namespace Regulus.Project.GameProject1.Game.Play
 {
     internal class NormalStatus : ActorStatus , INormalSkill , IInventoryController
     {
-        private readonly ISoulBinder _Binder;
+        private readonly IBinder _Binder;
 
         private readonly Entity _Player;
 
@@ -28,7 +28,7 @@ namespace Regulus.Project.GameProject1.Game.Play
 
         private float _UpdateAllItemTime;
 
-        public NormalStatus(ISoulBinder binder, Entity player) 
+        public NormalStatus(IBinder binder, Entity player) 
         {
             _TimeCounter = new TimeCounter();
             _Binder = binder;

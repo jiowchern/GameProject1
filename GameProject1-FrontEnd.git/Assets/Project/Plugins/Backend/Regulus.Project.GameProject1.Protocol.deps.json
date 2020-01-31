@@ -1,0 +1,132 @@
+{
+  "runtimeTarget": {
+    "name": ".NETStandard,Version=v2.0/",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETStandard,Version=v2.0": {},
+    ".NETStandard,Version=v2.0/": {
+      "Regulus.Project.GameProject1.Protocol/1.0.0": {
+        "dependencies": {
+          "NETStandard.Library": "2.0.3",
+          "Regulus.Project.GameProject1.Data": "1.0.0",
+          "Regulus.Serialization": "0.1.0"
+        },
+        "runtime": {
+          "Regulus.Project.GameProject1.Protocol.dll": {}
+        }
+      },
+      "Microsoft.NETCore.Platforms/1.1.0": {},
+      "NETStandard.Library/2.0.3": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.1.0"
+        }
+      },
+      "Regulus.Network/0.1.6": {
+        "dependencies": {
+          "Regulus.Utility": "0.1.6"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Regulus.Network.dll": {
+            "assemblyVersion": "0.1.6.0",
+            "fileVersion": "0.1.6.0"
+          }
+        }
+      },
+      "Regulus.Remote/0.1.6": {
+        "dependencies": {
+          "Regulus.Network": "0.1.6",
+          "Regulus.Utility": "0.1.6"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Regulus.Remote.dll": {
+            "assemblyVersion": "0.1.6.0",
+            "fileVersion": "0.1.6.0"
+          }
+        }
+      },
+      "Regulus.Serialization/0.1.0": {
+        "dependencies": {
+          "Regulus.Utility": "0.1.6"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Regulus.Serialization.dll": {
+            "assemblyVersion": "0.1.0.0",
+            "fileVersion": "0.1.0.0"
+          }
+        }
+      },
+      "Regulus.Utility/0.1.6": {
+        "runtime": {
+          "lib/netstandard2.0/Regulus.Utility.dll": {
+            "assemblyVersion": "0.1.6.0",
+            "fileVersion": "0.1.6.0"
+          }
+        }
+      },
+      "Regulus.Project.GameProject1.Data/1.0.0": {
+        "dependencies": {
+          "Regulus.Remote": "0.1.6"
+        },
+        "runtime": {
+          "Regulus.Project.GameProject1.Data.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Regulus.Project.GameProject1.Protocol/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.NETCore.Platforms/1.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-dEBqCMk+ftsck9b66D7fXeP/W+I4/CUvKbgjkYdjrPaUapPB0Q1uDFxcV0LpEdQLYfvRPNImrWVrp2QjV4XFkQ==",
+      "path": "microsoft.netcore.platforms/1.1.0",
+      "hashPath": "microsoft.netcore.platforms.1.1.0.nupkg.sha512"
+    },
+    "NETStandard.Library/2.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-J+2dishy8XrY+plrohjD0d9ud8Zigi2diaPRiom/AC7KoJyLMnQWSDXFY5hZLDlK2z2J2mGrn3OXnLwpYXOwqg==",
+      "path": "netstandard.library/2.0.3",
+      "hashPath": "netstandard.library.2.0.3.nupkg.sha512"
+    },
+    "Regulus.Network/0.1.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-kV0dQ9TD6/LPERVslx9tlsNy18LF80wKWMjsVmIlXZYc2vsvxMOPbPHc1nTcNDcKE+xJf2xpaUUbvKSlGKyEEg==",
+      "path": "regulus.network/0.1.6",
+      "hashPath": "regulus.network.0.1.6.nupkg.sha512"
+    },
+    "Regulus.Remote/0.1.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-lScktFYEf9FTarNeewWYfzX0UY6gJQBwlWLIst08DuofPzsZXQNf1oPn3I3HOwOmZmE0f4zPcLNV90jnRoL26g==",
+      "path": "regulus.remote/0.1.6",
+      "hashPath": "regulus.remote.0.1.6.nupkg.sha512"
+    },
+    "Regulus.Serialization/0.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pp0yZqcRoVFEtrHY0yJ9Ok4F6bnIVY4gwot/ufzDE6AdOo0ZQH/18nZbDq2bh0+GclEms7R1C+IKiH0hjiHPUw==",
+      "path": "regulus.serialization/0.1.0",
+      "hashPath": "regulus.serialization.0.1.0.nupkg.sha512"
+    },
+    "Regulus.Utility/0.1.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-2zM1sc2SBWq5DgvUy6qynkoR2+w8YNTnt+haVutfXqbPUvq+AovmjbEg5VCvzbERVhJDd8wGNtO3WCc/1saT6g==",
+      "path": "regulus.utility/0.1.6",
+      "hashPath": "regulus.utility.0.1.6.nupkg.sha512"
+    },
+    "Regulus.Project.GameProject1.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

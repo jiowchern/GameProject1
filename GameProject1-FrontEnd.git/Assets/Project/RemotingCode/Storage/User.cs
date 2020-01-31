@@ -7,7 +7,10 @@ using Regulus.Framework;
 using Regulus.Project.GameProject1.Data;
 using Regulus.Remote;
 using Regulus.Utility;
-
+namespace Regulus.Game
+{
+    
+}
 namespace Regulus.Project.GameProject1.Game.Storage
 {
     internal class User : Regulus.Game.IUser
@@ -16,19 +19,19 @@ namespace Regulus.Project.GameProject1.Game.Storage
 
         private event Regulus.Game.OnNewUser _VerifySuccessEvent;
 
-        private readonly ISoulBinder _Binder;
+        private readonly IBinder _Binder;
 
-        private readonly StageMachine _Machine;
+        private readonly StatusMachine _Machine;
 
         private readonly IStorage _Storage;
 
         private Account _Account;
 
-        public User(ISoulBinder binder, IStorage storage)
+        public User(IBinder binder, IStorage storage)
         {
             this._Storage = storage;
             this._Binder = binder;
-            this._Machine = new StageMachine();
+            this._Machine = new StatusMachine();
         }
 
         void Regulus.Game.IUser.OnKick(Guid id)

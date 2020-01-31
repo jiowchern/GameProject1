@@ -15,7 +15,7 @@ using Vector2 = Regulus.CustomType.Vector2;
 
 namespace Regulus.Project.GameProject1.Game.Play
 {
-    internal class BattleCasterStatus : IStage, ICastSkill, IBattleSkill
+    internal class BattleCasterStatus : IStatus, ICastSkill, IBattleSkill
     {
         private readonly IBinder _Binder;
 
@@ -56,7 +56,7 @@ namespace Regulus.Project.GameProject1.Game.Play
             _MoveController = new MoveController(player);
         }
 
-        void IStage.Enter()
+        void IStatus.Enter()
         {
             _Binder.Bind<ICastSkill>(this);
             _Player.SetSkillVelocity(_Caster.GetShiftDirection(), _Caster.GetShiftSpeed());
@@ -84,7 +84,7 @@ namespace Regulus.Project.GameProject1.Game.Play
 
         }
 
-        void IStage.Leave()
+        void IStatus.Leave()
         {
             _Player.SetSkillVelocity(0,0);
             if (_Caster.CanDisarm())
@@ -140,7 +140,7 @@ namespace Regulus.Project.GameProject1.Game.Play
         #endregion
 
 
-        void IStage.Update()
+        void IStatus.Update()
         {
             var nowTime = _CastTimer.Second;
 

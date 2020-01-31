@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-class VerifyStage : Regulus.Utility.IStage
+class VerifyStage : Regulus.Utility.IStatus
 {
     private string _Account;
     private string _Password;
@@ -25,7 +25,7 @@ class VerifyStage : Regulus.Utility.IStage
     {
         
     }
-    void Regulus.Utility.IStage.Enter()
+    void Regulus.Utility.IStatus.Enter()
     {
         _Provider.Supply += _Provider_Supply;
     }
@@ -43,12 +43,12 @@ class VerifyStage : Regulus.Utility.IStage
             FailEvent();
     }
 
-    void Regulus.Utility.IStage.Leave()
+    void Regulus.Utility.IStatus.Leave()
     {
         _Provider.Supply -= _Provider_Supply;
     }
 
-    void Regulus.Utility.IStage.Update()
+    void Regulus.Utility.IStatus.Update()
     {
 
     }

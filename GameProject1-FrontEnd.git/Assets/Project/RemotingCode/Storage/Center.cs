@@ -25,7 +25,7 @@ namespace Regulus.Project.GameProject1.Game.Storage
             this._Update = new Updater();
         }
 
-        void IBinderProvider.AssignBinder(ISoulBinder binder)
+        void IBinderProvider.AssignBinder(IBinder binder)
         {
             this._Hall.PushUser(new User(binder, this._Stroage));
         }

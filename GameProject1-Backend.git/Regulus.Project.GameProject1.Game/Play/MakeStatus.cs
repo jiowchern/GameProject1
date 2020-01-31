@@ -8,7 +8,7 @@ using Regulus.Utility;
 
 namespace Regulus.Project.GameProject1.Game.Play
 {
-    internal class MakeStatus : IStage , IMakeSkill
+    internal class MakeStatus : IStatus , IMakeSkill
     {
         private readonly IBinder _Binder;
 
@@ -26,7 +26,7 @@ namespace Regulus.Project.GameProject1.Game.Play
             _Player = player;            
         }
 
-        void IStage.Enter()
+        void IStatus.Enter()
         {
             _Player.Make();
             _Formulas = _Player.GetFormulas();
@@ -35,12 +35,12 @@ namespace Regulus.Project.GameProject1.Game.Play
             
         }
 
-        void IStage.Leave()
+        void IStatus.Leave()
         {
             _Binder.Unbind<IMakeSkill>(this);
         }
 
-        void IStage.Update()
+        void IStatus.Update()
         {
             
         }

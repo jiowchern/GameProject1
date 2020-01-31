@@ -1,5 +1,4 @@
 using System;
-using System.Security.Policy;
 
 using Regulus.Project.GameProject1.Data;
 using Regulus.Remote;
@@ -7,9 +6,9 @@ using Regulus.Utility;
 
 namespace Regulus.Project.GameProject1.Game.Play
 {
-    internal class RealmReadyStage : IStage , IJumpMap
+    internal class RealmReadyStage : IStatus , IJumpMap
     {
-        private readonly ISoulBinder _Binder;
+        private readonly IBinder _Binder;
 
         private readonly Zone _Zone;
 
@@ -20,14 +19,14 @@ namespace Regulus.Project.GameProject1.Game.Play
         public event Action<Realm.Map> GameEvent;
         public event Action ErrorEvent;
 
-        public RealmReadyStage(ISoulBinder binder, Zone zone, string target)
+        public RealmReadyStage(IBinder binder, Zone zone, string target)
         {
             _Binder = binder;
             _Zone = zone;
             _Target = target;
         }
 
-        void IStage.Enter()
+        void IStatus.Enter()
         {
             var realm = this._Zone.FindRealm(_Target);
             if (realm != null)
@@ -47,12 +46,12 @@ namespace Regulus.Project.GameProject1.Game.Play
             _Binder.Bind<IJumpMap>(this);
         }
 
-        void IStage.Leave()
+        void IStatus.Leave()
         {
             _Binder.Unbind<IJumpMap>(this);
         }
 
-        void IStage.Update()
+        void IStatus.Update()
         {
             
         }

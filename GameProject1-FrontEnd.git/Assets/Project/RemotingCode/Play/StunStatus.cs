@@ -5,9 +5,9 @@ using Regulus.Utility;
 
 namespace Regulus.Project.GameProject1.Game.Play
 {
-    internal class StunStatus : IStage
+    internal class StunStatus : IStatus
     {
-        private readonly ISoulBinder _Binder;
+        private readonly IBinder _Binder;
 
         private readonly Entity _Player;
 
@@ -18,7 +18,7 @@ namespace Regulus.Project.GameProject1.Game.Play
 
         private float _Stun;
 
-        public StunStatus(ISoulBinder binder, Entity player)
+        public StunStatus(IBinder binder, Entity player)
         {
             _Binder = binder;
             _Player = player;
@@ -27,7 +27,7 @@ namespace Regulus.Project.GameProject1.Game.Play
             _Stun = 10f;
         }
 
-        void IStage.Enter()
+        void IStatus.Enter()
         {
             _Player.Stun();
             _Counter.Reset();
@@ -35,11 +35,11 @@ namespace Regulus.Project.GameProject1.Game.Play
 
         }
 
-        void IStage.Leave()
+        void IStatus.Leave()
         {            
         }
 
-        void IStage.Update()
+        void IStatus.Update()
         {
             if (_Counter.Second > 60f)
             {

@@ -3,7 +3,7 @@ using Regulus.Utility;
 
 namespace Regulus.Project.GameProject1.Game.Play
 {
-    abstract internal class ActorStatus : IStage
+    abstract internal class ActorStatus : IStatus
     {        
 
         public abstract void Enter();

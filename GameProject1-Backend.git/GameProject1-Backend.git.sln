@@ -1,21 +1,29 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26124.0
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29721.120
 MinimumVisualStudioVersion = 15.0.26124.0
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Regulus.Project.GameProject1.Data", "Regulus.Project.GameProject1.Data\Regulus.Project.GameProject1.Data.csproj", "{16488D9F-740D-4C29-B622-501EACE484F3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Regulus.Project.GameProject1.Data", "Regulus.Project.GameProject1.Data\Regulus.Project.GameProject1.Data.csproj", "{16488D9F-740D-4C29-B622-501EACE484F3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Regulus.Project.GameProject1.Game", "Regulus.Project.GameProject1.Game\Regulus.Project.GameProject1.Game.csproj", "{0AA2D11E-0992-4184-9DCD-DF5D599B53B0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Regulus.Project.GameProject1.Game", "Regulus.Project.GameProject1.Game\Regulus.Project.GameProject1.Game.csproj", "{0AA2D11E-0992-4184-9DCD-DF5D599B53B0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Regulus.Project.GameProject1.Play", "Regulus.Project.GameProject1.Play\Regulus.Project.GameProject1.Play.csproj", "{D8D0EB72-A972-4F3D-AE71-B62E30E1965D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Regulus.Project.GameProject1.Play", "Regulus.Project.GameProject1.Play\Regulus.Project.GameProject1.Play.csproj", "{D8D0EB72-A972-4F3D-AE71-B62E30E1965D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Regulus.Project.GameProject1.Storage", "Regulus.Project.GameProject1.Storage\Regulus.Project.GameProject1.Storage.csproj", "{C6033430-EDD2-4397-B9A1-999E98E0E533}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Regulus.Project.GameProject1.Storage", "Regulus.Project.GameProject1.Storage\Regulus.Project.GameProject1.Storage.csproj", "{C6033430-EDD2-4397-B9A1-999E98E0E533}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Regulus.Project.GameProject1.StorageUser", "Regulus.Project.GameProject1.StorageUser\Regulus.Project.GameProject1.StorageUser.csproj", "{C246E7E5-CED5-465B-BB69-1D7453B7C351}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Regulus.Project.GameProject1.StorageUser", "Regulus.Project.GameProject1.StorageUser\Regulus.Project.GameProject1.StorageUser.csproj", "{C246E7E5-CED5-465B-BB69-1D7453B7C351}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Regulus.Project.GameProject1.PlayUser", "Regulus.Project.GameProject1.PlayUser\Regulus.Project.GameProject1.PlayUser.csproj", "{8C294700-2015-4247-88FF-53D4725A4A19}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Regulus.Project.GameProject1.PlayUser", "Regulus.Project.GameProject1.PlayUser\Regulus.Project.GameProject1.PlayUser.csproj", "{8C294700-2015-4247-88FF-53D4725A4A19}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Regulus.Project.GameProject1.Tests", "Regulus.Project.GameProject1.Tests\Regulus.Project.GameProject1.Tests.csproj", "{9F42F58E-9539-4242-B265-6C00784DD03B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Regulus.Project.GameProject1.Tests", "Regulus.Project.GameProject1.Tests\Regulus.Project.GameProject1.Tests.csproj", "{9F42F58E-9539-4242-B265-6C00784DD03B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C6F86AF1-26A3-48F6-9C21-DD74A8820211}"
+	ProjectSection(SolutionItems) = preProject
+		publish-to-frontend.ps1 = publish-to-frontend.ps1
+		run.ps1 = run.ps1
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Regulus.Project.GameProject1.Protocol", "Regulus.Project.GameProject1.Protocol\Regulus.Project.GameProject1.Protocol.csproj", "{81C28850-CC46-4CCF-91BF-B915F871B24F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,9 +33,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{16488D9F-740D-4C29-B622-501EACE484F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -114,5 +119,23 @@ Global
 		{9F42F58E-9539-4242-B265-6C00784DD03B}.Release|x64.Build.0 = Release|Any CPU
 		{9F42F58E-9539-4242-B265-6C00784DD03B}.Release|x86.ActiveCfg = Release|Any CPU
 		{9F42F58E-9539-4242-B265-6C00784DD03B}.Release|x86.Build.0 = Release|Any CPU
+		{81C28850-CC46-4CCF-91BF-B915F871B24F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81C28850-CC46-4CCF-91BF-B915F871B24F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81C28850-CC46-4CCF-91BF-B915F871B24F}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{81C28850-CC46-4CCF-91BF-B915F871B24F}.Debug|x64.Build.0 = Debug|Any CPU
+		{81C28850-CC46-4CCF-91BF-B915F871B24F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{81C28850-CC46-4CCF-91BF-B915F871B24F}.Debug|x86.Build.0 = Debug|Any CPU
+		{81C28850-CC46-4CCF-91BF-B915F871B24F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81C28850-CC46-4CCF-91BF-B915F871B24F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81C28850-CC46-4CCF-91BF-B915F871B24F}.Release|x64.ActiveCfg = Release|Any CPU
+		{81C28850-CC46-4CCF-91BF-B915F871B24F}.Release|x64.Build.0 = Release|Any CPU
+		{81C28850-CC46-4CCF-91BF-B915F871B24F}.Release|x86.ActiveCfg = Release|Any CPU
+		{81C28850-CC46-4CCF-91BF-B915F871B24F}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7FE2018F-8233-49B4-9957-A8B0070C806D}
 	EndGlobalSection
 EndGlobal

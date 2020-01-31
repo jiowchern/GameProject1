@@ -17,14 +17,14 @@ namespace Regulus.Project.GameProject1.Game.Play
 
         private readonly Guid _TargetId;
 
-        private readonly ISoulBinder _Binder;
+        private readonly IBinder _Binder;
 
         private readonly TimeCounter _CastTimer;
 
         public event Action DoneEvent;
 
         private bool _Done;
-        public ExploreStatus(ISoulBinder binder, Entity player , IMapFinder map , Guid target_id)
+        public ExploreStatus(IBinder binder, Entity player , IMapFinder map , Guid target_id)
         {
             _Binder = binder;
             _Player = player;

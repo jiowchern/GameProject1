@@ -7,27 +7,27 @@ using Regulus.Utility;
 
 namespace Regulus.Project.GameProject1.Game.Play
 {
-    internal class ControlStatus : Regulus.Utility.IStage
+    internal class ControlStatus : Regulus.Utility.IStatus
     {
-        private readonly ISoulBinder _Binder;
+        private readonly IBinder _Binder;
 
         private readonly Entity _Player;        
 
         private readonly IMapFinder _Map;
 
-        private readonly StageMachine _Status;
+        private readonly StatusMachine _Status;
 
         public event Action StunEvent;
 
         private Regulus.Utility.TimeCounter _TimeCounter;
 
 
-        public ControlStatus(ISoulBinder binder, Entity player, IMapFinder map)
+        public ControlStatus(IBinder binder, Entity player, IMapFinder map)
         {
             _Binder = binder;
             _Player = player;            
             _Map = map;
-            _Status = new StageMachine();
+            _Status = new StatusMachine();
             _TimeCounter = new TimeCounter();
         }
         
@@ -67,7 +67,7 @@ namespace Regulus.Project.GameProject1.Game.Play
             _SetStatus(status);
         }
 
-        private void _SetStatus(IStage status)
+        private void _SetStatus(IStatus status)
         {            
             _Status.Push(status);
         }
@@ -80,7 +80,7 @@ namespace Regulus.Project.GameProject1.Game.Play
         }
 
         
-        void IStage.Enter()
+        void IStatus.Enter()
         {
             _Binder.Bind<IEquipmentNotifier>(_Player.Equipment);
             _Binder.Bind<IBagNotifier>(_Player.Bag);
@@ -88,14 +88,14 @@ namespace Regulus.Project.GameProject1.Game.Play
             _ToDone();
         }
 
-        void IStage.Leave()
+        void IStatus.Leave()
         {
             _Status.Termination();
             _Binder.Unbind<IBagNotifier>(_Player.Bag);
             _Binder.Unbind<IEquipmentNotifier>(_Player.Equipment);
         }
 
-        void IStage.Update()
+        void IStatus.Update()
         {
             _Status.Update();
 

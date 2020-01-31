@@ -14,7 +14,7 @@
     /// <summary>
     /// The connect stage.
     /// </summary>
-    public class ConnectStage : IStage
+    public class ConnectStage : IStatus
     {
         /// <summary>
         /// The _ ip.
@@ -69,7 +69,7 @@
         /// <summary>
         /// The leave.
         /// </summary>
-        void IStage.Leave()
+        void IStatus.Leave()
         {
             _Provider.Supply -= _Connect;
         }
@@ -77,7 +77,7 @@
         /// <summary>
         /// The enter.
         /// </summary>
-        void IStage.Enter()
+        void IStatus.Enter()
         {
             _Provider.Supply += _Connect;            
         }
@@ -118,7 +118,7 @@
         /// <summary>
         /// The update.
         /// </summary>
-        void IStage.Update()
+        void IStatus.Update()
         {
             
         }

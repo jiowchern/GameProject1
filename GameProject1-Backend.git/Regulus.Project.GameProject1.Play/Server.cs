@@ -13,7 +13,7 @@ namespace Regulus.Project.GameProject1.Play
     {
         private readonly Utility.LogFileRecorder _LogRecorder;
 
-        private readonly Utility.StageMachine _Machine;
+        private readonly Utility.StatusMachine _Machine;
 
         private readonly Utility.Updater _Updater;
         private readonly System.Threading.Tasks.Task _Loop;
@@ -36,7 +36,7 @@ namespace Regulus.Project.GameProject1.Play
 
             this._StorageVerifyData = new CustomType.Verify();
 
-            this._Machine = new Utility.StageMachine();
+            this._Machine = new Utility.StatusMachine();
             this._Updater = new Utility.Updater();
 
             _Loop = new System.Threading.Tasks.Task(_Update);
@@ -76,6 +76,7 @@ namespace Regulus.Project.GameProject1.Play
             _EnableLoop = false;
             _Loop.Wait();
             this._Updater.Shutdown();
+            _Machine.Termination();
             _Provider.Shutdown();
             Utility.Singleton<Utility.Log>.Instance.RecordEvent -= this._LogRecorder.Record;
             
@@ -169,20 +170,19 @@ namespace Regulus.Project.GameProject1.Play
                 {
                     if (assembly.IsDynamic)
                         continue;
-                    foreach (var type in assembly.GetExportedTypes())
-                    {
-                        if (type.Namespace == dataNamesapce)
-                        {
-                            types.Add(type);
-                        }
-                    }
+                    Regulus.Utility.Log.Instance.WriteInfo($"Storage find common ,{assembly.GetName().Name }");
+                    if (assembly.GetName().Name != dataNamesapce)
+                        continue;
+                    
+                    var ab = new Regulus.Remote.Protocol.AssemblyBuilder(Remote.Protocol.Essential.CreateFromDomain(assembly));
+                    var protocolAsm = ab.Create();
+                    var protocol = Regulus.Remote.Protocol.ProtocolProvider.Create(protocolAsm);
+                    var factory = new Storage.User.StandaloneFactory(center, protocol);
+                    this._Storage = new Storage.User.Proxy(factory);
+                    this._StorageUser = this._Storage.SpawnUser("user");
+                    break;
                 }
-                var ab = new Regulus.Remote.Protocol.AssemblyBuilder(new Remote.Protocol.Essential());
-                var protocolAsm = ab.Create();
-                var protocol = Regulus.Remote.Protocol.ProtocolProvider.Create(protocolAsm);
-                var factory = new Storage.User.StandaloneFactory(center, protocol);
-                this._Storage = new Storage.User.Proxy(factory);
-                this._StorageUser = this._Storage.SpawnUser("user");
+                
             }
         }
 

@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Regulus.Project.GameProject1.Game
 {
-	class VerifyStage : Utility.IStage
+	class VerifyStage : Utility.IStatus
 	{
 		public event Verify.DoneCallback DoneEvent;
 
@@ -21,20 +21,20 @@ namespace Regulus.Project.GameProject1.Game
 		    this._Binder = binder;
 		}
 
-		void Utility.IStage.Enter()
+		void Utility.IStatus.Enter()
 		{
 		    this._Verify.OnDoneEvent += this.DoneEvent;
 
 		    this._Binder.Bind<Regulus.Project.GameProject1.Data.IVerify>(this._Verify);
 		}
 
-		void Utility.IStage.Leave()
+		void Utility.IStatus.Leave()
 		{
 		    this._Binder.Unbind<Regulus.Project.GameProject1.Data.IVerify>(this._Verify);
 		    this._Verify.OnDoneEvent -= this.DoneEvent;
 		}
 
-		void Utility.IStage.Update()
+		void Utility.IStatus.Update()
 		{
 		}
 	}

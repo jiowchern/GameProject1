@@ -4,7 +4,7 @@ using Regulus.Utility;
 
 namespace Regulus.Project.GameProject1.Play
 {
-    internal class BuildCenterStage : IStage
+    internal class BuildCenterStage : IStatus
     {
         public delegate void SuccessBuiledCallback(ExternalFeature features);
 
@@ -36,16 +36,16 @@ namespace Regulus.Project.GameProject1.Play
             this._StorageUser = storage_user;
         }
 
-        void IStage.Enter()
+        void IStatus.Enter()
         {
             this._StorageUser.QueryProvider<IAccountFinder>().Supply += this._AccountFinder;
         }
 
-        void IStage.Leave()
+        void IStatus.Leave()
         {
         }
 
-        void IStage.Update()
+        void IStatus.Update()
         {
         }
 

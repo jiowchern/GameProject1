@@ -34,7 +34,7 @@ namespace Regulus.Project.GameProject1.Game
             _DeltaTimeCounter = new TimeCounter();        
         }
 
-        public ISoulBinder GetSoulBinder()
+        public IBinder GetSoulBinder()
         {
             return _Transponder;
         }

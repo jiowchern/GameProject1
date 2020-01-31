@@ -5,7 +5,7 @@ using Regulus.Utility;
 
 namespace Regulus.Project.GameProject1.Game.Play
 {
-    internal class LoadRecordStage : IStage
+    internal class LoadRecordStage : IStatus
     {
         private readonly Guid _AccountId;
         private readonly IBinder _Binder;
@@ -22,7 +22,7 @@ namespace Regulus.Project.GameProject1.Game.Play
             this._GameRecorder = gameRecorder;
         }
 
-        void IStage.Enter()
+        void IStatus.Enter()
         {
             this._GameRecorder.Load(this._AccountId).OnValue += this._LoadResult; 
         }
@@ -32,12 +32,12 @@ namespace Regulus.Project.GameProject1.Game.Play
             this.DoneEvent(obj);
         }
 
-        void IStage.Leave()
+        void IStatus.Leave()
         {
             
         }
 
-        void IStage.Update()
+        void IStatus.Update()
         {
 
         }

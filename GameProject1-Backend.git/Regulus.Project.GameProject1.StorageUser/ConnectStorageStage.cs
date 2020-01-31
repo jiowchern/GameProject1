@@ -3,7 +3,7 @@ using Regulus.Utility;
 
 namespace Regulus.Project.GameProject1.Storage.User
 {
-	public class ConnectStorageStage : IStage
+	public class ConnectStorageStage : IStatus
 	{
 		public delegate void DoneCallback(bool result);
 
@@ -23,17 +23,17 @@ namespace Regulus.Project.GameProject1.Storage.User
 		    this._Port = port;
 		}
 
-		void IStage.Enter()
+		void IStatus.Enter()
 		{
 		    this._User.Remote.ConnectProvider.Supply += this._Connect;
 		}
 
-		void IStage.Leave()
+		void IStatus.Leave()
 		{
 		    this._User.Remote.ConnectProvider.Supply -= this._Connect;
 		}
 
-		void IStage.Update()
+		void IStatus.Update()
 		{
 		}
 

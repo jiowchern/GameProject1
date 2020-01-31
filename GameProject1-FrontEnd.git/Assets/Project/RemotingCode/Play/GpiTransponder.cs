@@ -7,7 +7,7 @@ using Regulus.Remote;
 
 namespace Regulus.Project.GameProject1.Game.Play
 {
-    public class GpiTransponder : ISoulBinder
+    public class GpiTransponder : IBinder
     {
 
         
@@ -17,7 +17,7 @@ namespace Regulus.Project.GameProject1.Game.Play
         {
             _Gpis = new Dictionary<Type, IGpiProvider>();
         }
-        void ISoulBinder.Return<TSoul>(TSoul soul)
+        void IBinder.Return<TSoul>(TSoul soul)
         {
             _Add(soul);
         }
@@ -37,12 +37,12 @@ namespace Regulus.Project.GameProject1.Game.Play
             }
         }
 
-        void ISoulBinder.Bind<TSoul>(TSoul soul) 
+        void IBinder.Bind<TSoul>(TSoul soul) 
         {
             _Add(soul);
         }
 
-        void ISoulBinder.Unbind<TSoul>(TSoul soul) 
+        void IBinder.Unbind<TSoul>(TSoul soul) 
         {
             var key = typeof(TSoul);
             if (_Gpis.ContainsKey(key))
@@ -53,7 +53,7 @@ namespace Regulus.Project.GameProject1.Game.Play
         }
 
         private event Action _BreakEvent;
-        event Action ISoulBinder.BreakEvent
+        event Action IBinder.BreakEvent
         {
             add { _BreakEvent += value; }
             remove { _BreakEvent -= value; }

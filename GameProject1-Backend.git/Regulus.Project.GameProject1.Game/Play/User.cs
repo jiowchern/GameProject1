@@ -21,7 +21,7 @@ namespace Regulus.Project.GameProject1.Game.Play
 
         
 
-        private readonly StageMachine _Machine;
+        private readonly StatusMachine _Machine;
 
         private readonly IGameRecorder _GameRecorder;
 
@@ -34,7 +34,7 @@ namespace Regulus.Project.GameProject1.Game.Play
         private string _Version;
         public User(IBinder binder, IAccountFinder account_finder, IGameRecorder game_record_handler, Zone zone)
         {
-            this._Machine = new StageMachine();
+            this._Machine = new StatusMachine();
 
             this._Binder = binder;
             this._AccountFinder = account_finder;

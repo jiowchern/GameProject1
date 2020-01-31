@@ -5,6 +5,7 @@ using Regulus.Utility;
 
 
 using Regulus.Project.GameProject1.Play.User;
+using System;
 
 namespace Regulus.Project.GameProject1
 {
@@ -14,9 +15,9 @@ namespace Regulus.Project.GameProject1
 
 		private readonly IUser _User;
 
-		private readonly Console.IViewer _View;
+		private readonly Utility.Console.IViewer _View;
 
-		public CommandParser(Command command, Console.IViewer view, IUser user)
+		public CommandParser(Command command, Utility.Console.IViewer view, IUser user)
 		{
 		    this._Command = command;
 		    this._View = view;
@@ -105,7 +106,9 @@ namespace Regulus.Project.GameProject1
 	    {
             var binder = factory.Create(this._User.JumpMapProvider);
             binder.Bind( gpi=>gpi.Ready());
-        }
+			
+
+		}
 
 	    private void _CreateVisible(IGPIBinderFactory factory)
 	    {
@@ -177,12 +180,17 @@ namespace Regulus.Project.GameProject1
 		{
 			var connect = factory.Create(this._User.Remote.ConnectProvider);
 
-            
-            connect.Bind<string,int,Regulus.Remote.Value<bool>>( (gpi , ip , port)=> gpi.Connect(new System.Net.IPEndPoint(System.Net.IPAddress.Parse(ip),port)) , _ConnectResult);
+                        
+			connect.BindStatic<string, int, Regulus.Remote.Value<bool>>((gpi, ip, port) => this._Connect(gpi, ip, port), _ConnectResult);
 
 		}
 
-        private void _CreateDevelopActor(IGPIBinderFactory factory)
+		private Regulus.Remote.Value<bool> _Connect(IConnect gpi, string ip, int port)
+		{
+			return gpi.Connect(new System.Net.IPEndPoint(System.Net.IPAddress.Parse(ip), port));
+		}
+
+		private void _CreateDevelopActor(IGPIBinderFactory factory)
         {
             var binder = factory.Create(this._User.DevelopActorProvider);
             binder.Bind<float>( (gpi , view ) => gpi.SetBaseView(view) );

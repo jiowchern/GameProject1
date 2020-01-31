@@ -170,7 +170,7 @@ public class Client : MonoBehaviour , IEntry
 		_Online = null;
 	}
 
-    void IBinderProvider.AssignBinder(ISoulBinder binder)
+    void IBinderProvider.AssignBinder(IBinder binder)
     {
         _Center.AssignBinder(binder);
     }

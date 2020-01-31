@@ -13,7 +13,7 @@ namespace Regulus.Project.GameProject1.Game.Play
 
         private readonly Entity _Actor;
 
-        private readonly Regulus.Utility.StageMachine _Machine;
+        private readonly Regulus.Utility.StatusMachine _Machine;
 
         private readonly Regulus.Utility.Updater _Updater;
 
@@ -29,7 +29,7 @@ namespace Regulus.Project.GameProject1.Game.Play
             _Updater = new Updater();
             _Map = map;
             _Actor = actor;
-            _Machine = new StageMachine();
+            _Machine = new StatusMachine();
         }
 
         public IIndividual Entity { get { return _Actor; } }

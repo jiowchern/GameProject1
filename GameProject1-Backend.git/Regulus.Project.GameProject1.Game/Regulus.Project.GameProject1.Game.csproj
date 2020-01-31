@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Regulus.BehaviourTree" Version="0.1.0" />
+    <PackageReference Include="Regulus.BehaviourTree" Version="0.1.6" />
   </ItemGroup>
 
   <ItemGroup>

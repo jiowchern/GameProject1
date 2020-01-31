@@ -6,7 +6,7 @@ using Regulus.Utility;
 
 namespace Regulus.Project.GameProject1.Game.Play
 {
-    internal class RealmReadyStage : IStage , IJumpMap
+    internal class RealmReadyStage : IStatus , IJumpMap
     {
         private readonly IBinder _Binder;
 
@@ -26,7 +26,7 @@ namespace Regulus.Project.GameProject1.Game.Play
             _Target = target;
         }
 
-        void IStage.Enter()
+        void IStatus.Enter()
         {
             var realm = this._Zone.FindRealm(_Target);
             if (realm != null)
@@ -46,12 +46,12 @@ namespace Regulus.Project.GameProject1.Game.Play
             _Binder.Bind<IJumpMap>(this);
         }
 
-        void IStage.Leave()
+        void IStatus.Leave()
         {
             _Binder.Unbind<IJumpMap>(this);
         }
 
-        void IStage.Update()
+        void IStatus.Update()
         {
             
         }

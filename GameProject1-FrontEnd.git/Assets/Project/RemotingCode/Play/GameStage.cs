@@ -14,9 +14,9 @@ using Regulus.Utility;
 
 namespace Regulus.Project.GameProject1.Game.Play
 {
-    internal class GameStage : IStage, IPlayerProperys,IEmotion        
+    internal class GameStage : IStatus, IPlayerProperys,IEmotion        
     {
-        private readonly ISoulBinder _Binder;
+        private readonly IBinder _Binder;
 
         private readonly IMapFinder _Map;
 
@@ -36,7 +36,7 @@ namespace Regulus.Project.GameProject1.Game.Play
 
         private readonly Regulus.Utility.Updater _Updater;
 
-        private readonly Regulus.Utility.StageMachine _Machine;
+        private readonly Regulus.Utility.StatusMachine _Machine;
 
         private readonly Behavior _Behavior;
 
@@ -47,7 +47,7 @@ namespace Regulus.Project.GameProject1.Game.Play
 
         
 
-        public GameStage(ISoulBinder binder, IMapFinder map , IMapGate gate, Entity entity)
+        public GameStage(IBinder binder, IMapFinder map , IMapGate gate, Entity entity)
         {
             _Gate = gate;
             _Map = map;
@@ -55,17 +55,17 @@ namespace Regulus.Project.GameProject1.Game.Play
             _DeltaTimeCounter = new TimeCounter();
             _UpdateTimeCounter = new TimeCounter();
             _Updater = new Updater();
-            _Machine = new StageMachine();
+            _Machine = new StatusMachine();
             _DifferenceNoticer = new DifferenceNoticer<IIndividual>();
 
             _Player = entity;
             _Mover = new Mover(this._Player);            
         }
-        public GameStage(ISoulBinder binder, IMapFinder map, IMapGate gate, Entity entity, Behavior behavior) : this(binder, map, gate, entity)
+        public GameStage(IBinder binder, IMapFinder map, IMapGate gate, Entity entity, Behavior behavior) : this(binder, map, gate, entity)
         {
             _Behavior = behavior;
         }
-        void IStage.Leave()
+        void IStatus.Leave()
         {
             _Machine.Termination();
             _Updater.Shutdown();
@@ -80,7 +80,7 @@ namespace Regulus.Project.GameProject1.Game.Play
             _Gate.Left(_Player);
         }
 
-        void IStage.Enter()
+        void IStatus.Enter()
         {
             this._DifferenceNoticer.JoinEvent += this._BroadcastJoin;
             this._DifferenceNoticer.LeftEvent += this._BroadcastLeft;
@@ -97,7 +97,7 @@ namespace Regulus.Project.GameProject1.Game.Play
 
         
 
-        void IStage.Update()
+        void IStatus.Update()
         {
             if (_UpdateTimeCounter.Second < _UpdateTime)
                 return;

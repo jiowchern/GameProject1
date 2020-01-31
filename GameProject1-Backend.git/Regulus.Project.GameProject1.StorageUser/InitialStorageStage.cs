@@ -5,7 +5,7 @@
 
 namespace Regulus.Project.GameProject1.Storage.User
 {
-	public class VerifyStorageStage : IStage
+	public class VerifyStorageStage : IStatus
 	{
 		public delegate void DoneCallback(bool result);
 
@@ -24,16 +24,16 @@ namespace Regulus.Project.GameProject1.Storage.User
 		    this._User = user;
 		}
 
-		void IStage.Update()
+		void IStatus.Update()
 		{
 		}
 
-		void IStage.Leave()
+		void IStatus.Leave()
 		{
 		    this._User.VerifyProvider.Supply -= this._ToVerify;
 		}
 
-		void IStage.Enter()
+		void IStatus.Enter()
 		{
 		    this._User.VerifyProvider.Supply += this._ToVerify;
 		}

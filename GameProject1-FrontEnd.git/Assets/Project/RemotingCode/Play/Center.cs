@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Security.Policy;
+
 
 using Regulus.Framework;
 using Regulus.Game;
@@ -167,7 +167,7 @@ namespace Regulus.Project.GameProject1.Game.Play
             
 
         }
-        public void Join(Remote.ISoulBinder binder)
+        public void Join(Remote.IBinder binder)
         {
             this._Hall.PushUser(new User(binder , this._AccountFinder , this._GameRecorder , this._Zone));
         }
@@ -190,7 +190,7 @@ namespace Regulus.Project.GameProject1.Game.Play
             return true;
         }
 
-        public void AssignBinder(Remote.ISoulBinder binder)
+        public void AssignBinder(Remote.IBinder binder)
         {
             this.Join(binder);
         }

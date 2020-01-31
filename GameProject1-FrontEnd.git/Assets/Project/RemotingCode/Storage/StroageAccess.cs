@@ -6,7 +6,7 @@ using Regulus.Utility;
 
 namespace Regulus.Project.GameProject1.Game.Storage
 {
-    public class StroageAccess : IStage, IQuitable, IStorageCompetences
+    public class StroageAccess : IStatus, IQuitable, IStorageCompetences
     {
         public delegate void DoneCallback();
 
@@ -14,11 +14,11 @@ namespace Regulus.Project.GameProject1.Game.Storage
 
         private readonly Account _Account;
 
-        private readonly ISoulBinder _Binder;
+        private readonly IBinder _Binder;
 
         private readonly IStorage _Storage;
 
-        public StroageAccess(ISoulBinder binder, Account account, IStorage storage)
+        public StroageAccess(IBinder binder, Account account, IStorage storage)
         {
             this._Binder = binder;
             this._Account = account;
@@ -30,17 +30,17 @@ namespace Regulus.Project.GameProject1.Game.Storage
             this.DoneEvent();
         }
 
-        void IStage.Enter()
+        void IStatus.Enter()
         {
             this._Attach(this._Account);
         }
 
-        void IStage.Leave()
+        void IStatus.Leave()
         {
             this._Detach(this._Account);
         }
 
-        void IStage.Update()
+        void IStatus.Update()
         {
         }
 
