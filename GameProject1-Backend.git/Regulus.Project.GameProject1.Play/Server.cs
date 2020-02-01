@@ -118,14 +118,14 @@ namespace Regulus.Project.GameProject1.Play
             var items = Utility.Serialization.Read<ItemPrototype[]>(itemsBuffer);
             Singleton<Resource>.Instance.Items = items;
 
-            var itemFormulasBuffer = System.IO.File.ReadAllBytes("itemFormulas.txt");
+            var itemFormulasBuffer = System.IO.File.ReadAllBytes("itemformulas.txt");
             var itemFormulas = Utility.Serialization.Read<ItemFormula[]>(itemFormulasBuffer);
             Singleton<Resource>.Instance.Formulas = itemFormulas;
         }
 
         private static void _BuildGroup()
         {
-            var entityGroupLayoutBuffer1 = System.IO.File.ReadAllBytes("entityGroupLayout.txt");
+            var entityGroupLayoutBuffer1 = System.IO.File.ReadAllBytes("entitygrouplayout.txt");
             var entityGroupLayouts = Utility.Serialization.Read<EntityGroupLayout[]>(entityGroupLayoutBuffer1);
 
             var entityGroupLayoutBuffer2 = System.IO.File.ReadAllBytes("town1.txt");
