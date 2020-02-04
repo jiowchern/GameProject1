@@ -11,7 +11,7 @@ xcopy .\Regulus.Project.GameProject1.Game\*.cs ..\GameProject1-FrontEnd.git\Asse
 
 
 
-
+Remove-Item .\Regulus.Project.GameProject1.Protocol\*.cs -Recurse
 
 dotnet tool install --global  Regulus.Application.Protocol.CodeWriter
 
@@ -21,4 +21,3 @@ dotnet tool uninstall --global  Regulus.Application.Protocol.CodeWriter
 
 dotnet publish .\Regulus.Project.GameProject1.Protocol -o ..\GameProject1-FrontEnd.git\Assets\Project\Plugins\Backend
 
-Remove-Item .\Regulus.Project.GameProject1.Protocol\*.cs -Recurse

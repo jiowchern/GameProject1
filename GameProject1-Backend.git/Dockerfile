@@ -12,6 +12,7 @@ RUN dotnet tool install --tool-path /app/bin Regulus.Application.Server
 
 WORKDIR /app/bin
 
-ENTRYPOINT ["./Regulus.Application.Server","launchini","config.ini"]
+  
+ENTRYPOINT ["./Regulus.Application.Server","launchprotocol","47536" ,"Regulus.Project.GameProject1.Protocol.dll" ,"Regulus.Project.GameProject1.Play.dll" , "Regulus.Project.GameProject1.Play.Server" ]
 
 
