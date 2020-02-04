@@ -162,27 +162,12 @@ namespace Regulus.Project.GameProject1.Play
                 _StorageVerifyData.IPAddress = "127.0.0.1";
                 var center = new Game.Storage.Center(new Game.DummyFrature());
                 this._Updater.Add(center);
+                var protocol = System.Activator.CreateInstance(Regulus.Remote.Protocol.ProtocolProvider.GetProtocols().Single()) as IProtocol;
+                                
+                var factory = new Storage.User.StandaloneFactory(center, protocol);
+                this._Storage = new Storage.User.Proxy(factory);
+                this._StorageUser = this._Storage.SpawnUser("user");
 
-
-                var types = new System.Collections.Generic.List<System.Type>();
-                string dataNamesapce = "Regulus.Project.GameProject1.Data";
-                foreach (var assembly in System.AppDomain.CurrentDomain.GetAssemblies())
-                {
-                    if (assembly.IsDynamic)
-                        continue;
-                    Regulus.Utility.Log.Instance.WriteInfo($"Storage find common ,{assembly.GetName().Name }");
-                    if (assembly.GetName().Name != dataNamesapce)
-                        continue;
-                    
-                    var ab = new Regulus.Remote.Protocol.AssemblyBuilder(Remote.Protocol.Essential.CreateFromDomain(assembly));
-                    var protocolAsm = ab.Create();
-                    var protocol = Regulus.Remote.Protocol.ProtocolProvider.Create(protocolAsm);
-                    var factory = new Storage.User.StandaloneFactory(center, protocol);
-                    this._Storage = new Storage.User.Proxy(factory);
-                    this._StorageUser = this._Storage.SpawnUser("user");
-                    break;
-                }
-                
             }
         }
 
