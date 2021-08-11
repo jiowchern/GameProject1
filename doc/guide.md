@@ -3,7 +3,7 @@
 
 這是一款用Unity撰寫的**未完成**開發項目，雖然作者還是有想要繼續開發的想法，但是只會在假日時候做些簡單的開發。 
 
-[Client 點我下載](https://drive.google.com/file/d/1ItZIiPb-FhKoaTthAB4qttuAhBIbreFT/view?usp=sharing)
+[Client 點我下載](https://drive.google.com/open?id=1eI8m8_l_YX-LOczTO55nBQQWHwGEUnfm)
 
 # 遊戲導覽
 
