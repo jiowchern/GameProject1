@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-using Regulus.CustomType;
+using Regulus.Utility;
 using Regulus.Project.GameProject1.Data;
 
 namespace Regulus.Project.GameProject1.Game.Play

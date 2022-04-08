@@ -1,8 +1,6 @@
 using System.Collections.Generic;
 using System.Linq;
-using System.Runtime.CompilerServices;
-
-using Regulus.CustomType;
+using Regulus.Utility;
 
 namespace Regulus.Project.GameProject1.Data
 {
@@ -20,8 +18,8 @@ namespace Regulus.Project.GameProject1.Data
 
         private readonly float _Lengeh;
         
-        public Determination(Regulus.CustomType.Vector2[] lefts,
-            Regulus.CustomType.Vector2[] rights,
+        public Determination(Regulus.Utility.Vector2[] lefts,
+            Regulus.Utility.Vector2[] rights,
             float total, float begin, float end)
         {
             _Lefts = lefts;
@@ -37,7 +35,7 @@ namespace Regulus.Project.GameProject1.Data
         {            
         }
 
-        public Regulus.CustomType.Polygon Find(float begin, float length)
+        public Regulus.Utility.Polygon Find(float begin, float length)
         {
             if (begin > _End)
                 return null;

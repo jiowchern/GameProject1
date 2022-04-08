@@ -2,7 +2,7 @@ using System;
 
 using System.Linq;
 
-using Regulus.CustomType;
+using Regulus.Utility;
 using Regulus.Project.GameProject1.Data;
 using Regulus.Utility;
 

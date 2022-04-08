@@ -4,13 +4,13 @@ using System.Linq;
 
 
 using Regulus.BehaviourTree;
-using Regulus.CustomType;
+using Regulus.Utility;
 using Regulus.Extension;
 using Regulus.Project.GameProject1.Data;
 using Regulus.Utility;
 
 
-using Vector2 = Regulus.CustomType.Vector2;
+using Vector2 = Regulus.Utility.Vector2;
 
 
 

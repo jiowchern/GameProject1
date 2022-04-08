@@ -1,10 +1,13 @@
-using System;
 
 using Regulus.BehaviourTree;
 
+namespace Regulus.Collection
+{
+}
+
 namespace Regulus.BehaviourTree
 {
-    
+
 
 }
 

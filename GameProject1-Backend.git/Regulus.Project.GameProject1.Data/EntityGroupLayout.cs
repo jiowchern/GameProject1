@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-using Regulus.CustomType;
+using Regulus.Utility;
 
 namespace Regulus.Project.GameProject1.Data
 {

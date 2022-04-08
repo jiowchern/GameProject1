@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Regulus.Framework;
+
 using Regulus.Game;
 using Regulus.Project.GameProject1.Data;
 using Regulus.Remote;
@@ -25,7 +25,7 @@ namespace Regulus.Project.GameProject1.Game.Storage
             this._Update = new Updater();
         }
 
-        void IBinderProvider.AssignBinder(IBinder binder)
+        void IBinderProvider.AssignBinder(IBinder binder , object state)
         {
             this._Hall.PushUser(new User(binder, this._Stroage));
         }

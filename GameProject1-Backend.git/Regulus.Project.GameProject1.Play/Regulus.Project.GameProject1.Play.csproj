@@ -6,7 +6,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Regulus.Project.GameProject1.Game\Regulus.Project.GameProject1.Game.csproj" />
-    <ProjectReference Include="..\Regulus.Project.GameProject1.Protocol\Regulus.Project.GameProject1.Protocol.csproj" />
     <ProjectReference Include="..\Regulus.Project.GameProject1.StorageUser\Regulus.Project.GameProject1.StorageUser.csproj" />
   </ItemGroup>
 

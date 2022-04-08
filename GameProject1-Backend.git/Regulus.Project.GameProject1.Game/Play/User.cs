@@ -1,5 +1,5 @@
 ﻿using System;
-using Regulus.Framework;
+
 
 using Regulus.Project.GameProject1.Data;
 using Regulus.Remote;
@@ -31,9 +31,12 @@ namespace Regulus.Project.GameProject1.Game.Play
 
         private GamePlayerRecord _GamePlayerRecord;
 
+
+        UnbindHelper _UnbindHelper;
         private string _Version;
         public User(IBinder binder, IAccountFinder account_finder, IGameRecorder game_record_handler, Zone zone)
         {
+            _UnbindHelper = new UnbindHelper(binder);
             this._Machine = new StatusMachine();
 
             this._Binder = binder;
@@ -83,16 +86,15 @@ namespace Regulus.Project.GameProject1.Game.Play
         void IBootable.Launch()
         {
             this._Binder.BreakEvent += this._Quit;
-            this._Binder.Bind<IVersion>(this);
-            this._Binder.Bind<IAccountStatus>(this);
+            _UnbindHelper += this._Binder.Bind<IVersion>(this);
+            _UnbindHelper += _Binder.Bind<IAccountStatus>(this);
             this._ToVerify();
         }
 
         void IBootable.Shutdown()
         {
             this._SaveRecord();
-            this._Binder.Unbind<IVersion>(this);
-            this._Binder.Unbind<IAccountStatus>(this);
+            _UnbindHelper.Release();
             this._Machine.Termination();
             this._Binder.BreakEvent -= this._Quit;
         }
@@ -186,8 +188,9 @@ namespace Regulus.Project.GameProject1.Game.Play
             _Machine.Push(stage);            
         }
 
-        string IVersion.Number {
-            get { return _Version; }
+
+        Regulus.Remote.Property<string> IVersion.Number {
+            get { return new Regulus.Remote.Property<string>(_Version) ; }
         }
     }
 }

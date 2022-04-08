@@ -10,6 +10,28 @@ namespace Regulus.Project.GameProject1.Game.Play
     public class GpiTransponder : IBinder
     {
 
+        class Soul : ISoul
+        {
+            static long _GId = 0;
+            long _Id ;
+            public  readonly Type Type;
+            private readonly object _Instance;
+
+            public Soul(Type type , object instance)
+            {
+                _Id = ++_GId;
+                this.Type = type;
+                this._Instance = instance;
+            }
+            object ISoul.Instance => _Instance;
+
+            long ISoul.Id => _Id;
+
+            bool ISoul.IsTypeObject(TypeObject obj)
+            {
+                return obj.Instance == _Instance && obj.Type == Type;
+            }
+        }
         
         private readonly Dictionary<Type, IGpiProvider> _Gpis;
 
@@ -17,9 +39,10 @@ namespace Regulus.Project.GameProject1.Game.Play
         {
             _Gpis = new Dictionary<Type, IGpiProvider>();
         }
-        void IBinder.Return<TSoul>(TSoul soul)
+        ISoul IBinder.Return<TSoul>(TSoul soul)
         {
             _Add(soul);
+            return new Soul(typeof(TSoul) , soul); 
         }
 
         private void _Add<TSoul>(TSoul soul) 
@@ -37,14 +60,16 @@ namespace Regulus.Project.GameProject1.Game.Play
             }
         }
 
-        void IBinder.Bind<TSoul>(TSoul soul) 
+        ISoul IBinder.Bind<TSoul>(TSoul soul) 
         {
             _Add(soul);
+            return new Soul(typeof(TSoul), soul);
         }
 
-        void IBinder.Unbind<TSoul>(TSoul soul) 
+        void IBinder.Unbind(ISoul soul) 
         {
-            var key = typeof(TSoul);
+            var s= (Soul)soul;
+            var key = s.Type;
             if (_Gpis.ContainsKey(key))
             {
                 _Gpis[key].Remove(soul);
@@ -70,6 +95,7 @@ namespace Regulus.Project.GameProject1.Game.Play
             _Gpis.Add( key , provider);
             return provider;
         }
+
     }
 
     interface IGpiProvider

@@ -1,6 +1,6 @@
 ﻿using System;
 
-using Regulus.Framework;
+
 
 using Regulus.Remote;
 using Regulus.Utility;
@@ -8,7 +8,7 @@ using Regulus.Utility;
 
 namespace Regulus.Project.GameProject1.Storage
 {
-    public class Server : IEntry, Data.IStorage
+    public class Server : IEntry, Data.IStorage , IBootable
     {
         private readonly Game.Storage.Center _Center;
 
@@ -39,9 +39,9 @@ namespace Regulus.Project.GameProject1.Storage
             _BinderProvider = _Center;
         }
 
-        void IBinderProvider.AssignBinder(IBinder binder)
+        void IBinderProvider.AssignBinder(IBinder binder , object state)
         {
-            _BinderProvider.AssignBinder(binder);
+            _BinderProvider.AssignBinder(binder,state);
         }
 
         

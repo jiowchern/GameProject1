@@ -7,7 +7,7 @@ namespace Regulus.Project.GameProject1.Data
 {
     public interface IJumpMap
     {
-        string Realm { get; }
+        Remote.Property<string> Realm { get; }
         void Ready();
     }
 }

@@ -73,8 +73,8 @@
                 public Regulus.Project.GameProject1.Data.ACTOR_STATUS_TYPE _Status;
                 Regulus.Project.GameProject1.Data.ACTOR_STATUS_TYPE Regulus.Project.GameProject1.Data.IVisible.Status { get{ return _Status;} }
 
-                public Regulus.CustomType.Vector2 _Position;
-                Regulus.CustomType.Vector2 Regulus.Project.GameProject1.Data.IVisible.Position { get{ return _Position;} }
+                public Regulus.Utility.Vector2 _Position;
+                Regulus.Utility.Vector2 Regulus.Project.GameProject1.Data.IVisible.Position { get{ return _Position;} }
 
                 public System.Action<Regulus.Project.GameProject1.Data.EquipStatus[]> _EquipEvent;
                 event System.Action<Regulus.Project.GameProject1.Data.EquipStatus[]> Regulus.Project.GameProject1.Data.IVisible.EquipEvent

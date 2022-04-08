@@ -19,8 +19,11 @@ namespace Regulus.Project.GameProject1.Game.Play
         public event Action<Realm.Map> GameEvent;
         public event Action ErrorEvent;
 
+        UnbindHelper _UnbindHelper;
+
         public RealmReadyStage(IBinder binder, Zone zone, string target)
         {
+            _UnbindHelper = new UnbindHelper(binder);
             _Binder = binder;
             _Zone = zone;
             _Target = target;
@@ -43,12 +46,13 @@ namespace Regulus.Project.GameProject1.Game.Play
         private void _GetMap(Realm.Map obj)
         {
             _Map = obj;
-            _Binder.Bind<IJumpMap>(this);
+            _UnbindHelper += _Binder.Bind<IJumpMap>(this);
         }
 
         void IStatus.Leave()
         {
-            _Binder.Unbind<IJumpMap>(this);
+
+            _UnbindHelper.Release();
         }
 
         void IStatus.Update()
@@ -56,9 +60,9 @@ namespace Regulus.Project.GameProject1.Game.Play
             
         }
 
-        string IJumpMap.Realm
+        Regulus.Remote.Property<string> IJumpMap.Realm
         {
-            get { return _Target; }
+            get { return new Regulus.Remote.Property<string>(_Target); }
         }
 
         void IJumpMap.Ready()

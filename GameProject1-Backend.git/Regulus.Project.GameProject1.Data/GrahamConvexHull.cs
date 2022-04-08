@@ -9,8 +9,9 @@
 namespace AForge.Math.Geometry
 {
     using System;
-    using Regulus.CustomType;
+    
     using System.Collections.Generic;
+    using Regulus.Utility;
 
     /// <summary>
     /// Graham scan algorithm for finding convex hull.

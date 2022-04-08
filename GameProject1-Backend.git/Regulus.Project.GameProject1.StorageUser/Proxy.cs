@@ -1,4 +1,4 @@
-﻿using Regulus.Framework;
+﻿
 using Regulus.Utility;
 
 namespace Regulus.Project.GameProject1.Storage.User

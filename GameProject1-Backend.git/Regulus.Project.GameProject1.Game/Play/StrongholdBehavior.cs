@@ -4,7 +4,7 @@ using System.Linq;
 using System.Runtime.InteropServices;
 
 using Regulus.BehaviourTree;
-using Regulus.CustomType;
+using Regulus.Utility;
 using Regulus.Extension;
 using Regulus.Project.GameProject1.Data;
 

@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-using Regulus.CustomType;
+using Regulus.Utility;
 using Regulus.Extension;
 
 

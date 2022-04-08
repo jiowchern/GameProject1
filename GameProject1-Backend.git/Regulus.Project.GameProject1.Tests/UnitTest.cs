@@ -3,7 +3,7 @@ using System;
 
 using NSubstitute;
 
-using Regulus.CustomType;
+using Regulus.Utility;
 using Regulus.Project.GameProject1.Game.Play;
 using Regulus.Utility;
 using Regulus.Project.GameProject1.Data;

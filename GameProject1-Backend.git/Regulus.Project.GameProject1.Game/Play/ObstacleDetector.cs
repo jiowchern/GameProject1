@@ -6,7 +6,7 @@ using Regulus.BehaviourTree;
 
 
 
-using Vector2 = Regulus.CustomType.Vector2;
+using Vector2 = Regulus.Utility.Vector2;
 
 namespace Regulus.Project.GameProject1.Game.Play
 {

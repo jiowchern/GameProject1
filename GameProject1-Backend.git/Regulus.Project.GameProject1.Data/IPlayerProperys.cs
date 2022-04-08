@@ -8,11 +8,11 @@ namespace Regulus.Project.GameProject1.Data
     public interface IPlayerProperys
     {
 
-        string Realm { get; }
-        Guid Id { get; }
+        Regulus.Remote.Property<string> Realm { get; }
+        Regulus.Remote.Property<Guid> Id { get; }
 
-        float Strength { get; }
+        Regulus.Remote.Property<float> Strength { get; }
 
-        float Health { get; }
+        Regulus.Remote.Property<float> Health { get; }
     }
 }

@@ -4,8 +4,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.InteropServices.ComTypes;
 
-using Regulus.CustomType;
-using Regulus.Framework;
+using Regulus.Utility;
+
 using Regulus.Project.GameProject1.Data;
 using Regulus.Utility;
 

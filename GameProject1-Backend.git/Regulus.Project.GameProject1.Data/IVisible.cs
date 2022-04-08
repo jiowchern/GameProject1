@@ -1,21 +1,21 @@
 using System;
 
-using Regulus.CustomType;
+using Regulus.Utility;
 
 namespace Regulus.Project.GameProject1.Data
 {
     public interface IVisible
     {
-        ENTITY EntityType { get; }
-        Guid Id { get; }
+        Regulus.Remote.Property<ENTITY> EntityType { get; }
+        Regulus.Remote.Property<Guid> Id { get; }
 
-        string Name { get; }
+        Regulus.Remote.Property<string> Name { get; }
 
-        float View { get; }
+        Regulus.Remote.Property<float> View { get; }
 
-        float Direction { get; }
+        Regulus.Remote.Property<float> Direction { get; }
 
-        ACTOR_STATUS_TYPE Status { get; }
+        Regulus.Remote.Property<ACTOR_STATUS_TYPE> Status { get; }
 
         event Action<EquipStatus[]> EquipEvent;
 
@@ -24,7 +24,7 @@ namespace Regulus.Project.GameProject1.Data
 
         event Action<Energy> EnergyEvent;
 
-        Vector2 Position { get; }
+        Regulus.Remote.Property< Vector2 >Position { get; }
 
         void QueryStatus();
 

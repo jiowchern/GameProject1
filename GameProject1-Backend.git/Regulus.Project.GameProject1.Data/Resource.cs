@@ -2,7 +2,7 @@
 using System.Linq;
 namespace Regulus.Project.GameProject1.Data
 {
-    public class Resource : Utility.Singleton<Resource>
+    public class Resource 
     {
         
         public EntityData[] Entitys;
@@ -13,6 +13,10 @@ namespace Regulus.Project.GameProject1.Data
         public ItemFormula[] Formulas;
 
         public EntityGroupLayout[] EntityGroupLayouts;
+
+        public static Resource Instance { get { return 
+                    Regulus.Utility.Singleton<Resource>.Instance
+                    ; } }    
 
         public Resource()
         {

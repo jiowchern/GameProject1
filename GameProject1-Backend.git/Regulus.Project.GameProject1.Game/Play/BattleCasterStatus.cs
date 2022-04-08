@@ -3,15 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.InteropServices.ComTypes;
 
-using Regulus.CustomType;
+using Regulus.Utility;
 using Regulus.Extension;
 using Regulus.Project.GameProject1.Data;
 using Regulus.Remote;
-using Regulus.Utility;
 
 
 
-using Vector2 = Regulus.CustomType.Vector2;
+
+using Vector2 = Regulus.Utility.Vector2;
 
 namespace Regulus.Project.GameProject1.Game.Play
 {
@@ -43,10 +43,13 @@ namespace Regulus.Project.GameProject1.Game.Play
         private bool _Overdraft;
 
         private SkillCaster _NextCaster;
+
+        readonly System.Collections.Generic.List<ISoul> _Unbinds;
         
 
         public BattleCasterStatus(IBinder binder, Entity player, IMapFinder map, SkillCaster caster)
         {
+            _Unbinds = new List<ISoul>();
             _CastTimer = new TimeCounter();
             _Attacked = new HashSet<Guid>();
             _Binder = binder;
@@ -58,7 +61,7 @@ namespace Regulus.Project.GameProject1.Game.Play
 
         void IStatus.Enter()
         {
-            _Binder.Bind<ICastSkill>(this);
+            
             _Player.SetSkillVelocity(_Caster.GetShiftDirection(), _Caster.GetShiftSpeed());
             _Player.CastBegin(_Caster.Data.Id);
 
@@ -68,12 +71,17 @@ namespace Regulus.Project.GameProject1.Game.Play
             _MoveController.TurnLeft = _Caster.GetTurnLeft();
             _MoveController.TurnRight = _Caster.GetTurnRight();
 
-            _Binder.Bind<IMoveController>(_MoveController);            
+            _Unbinds.Add(_Binder.Bind<ICastSkill>(this));
+
+            _Unbinds.Add(_Binder.Bind<IMoveController>(_MoveController));
+            
 
             if (_Caster.CanDisarm())
             {
-                _Binder.Bind<IBattleSkill>(this);
+                _Unbinds.Add(_Binder.Bind<IBattleSkill>(this));
+                
             }
+
 
             _CastTimer.Reset();
 
@@ -87,13 +95,14 @@ namespace Regulus.Project.GameProject1.Game.Play
         void IStatus.Leave()
         {
             _Player.SetSkillVelocity(0,0);
-            if (_Caster.CanDisarm())
+            foreach (var soul in _Unbinds)
             {
-                _Binder.Unbind<IBattleSkill>(this);
+                _Binder.Unbind(soul);      
             }
-            _Binder.Unbind<IMoveController>(_MoveController);
+            _Unbinds.Clear();
 
-            _Binder.Unbind<ICastSkill>(this);
+
+
             _Player.CastEnd(_Caster.Data.Id);
 
         }
@@ -168,8 +177,8 @@ namespace Regulus.Project.GameProject1.Game.Play
 
                 #region UnityDebugCode
 #if UNITY_EDITOR                
-                _DrawAll( (from p in _Caster.Data.Lefts select Regulus.CustomType.Polygon.RotatePoint(p, new Vector2(), dir)).ToArray()
-                    , (from p in _Caster.Data.Rights select Regulus.CustomType.Polygon.RotatePoint(p, new Vector2(), dir)).ToArray()
+                _DrawAll( (from p in _Caster.Data.Lefts select Regulus.Utility.Polygon.RotatePoint(p, new Vector2(), dir)).ToArray()
+                    , (from p in _Caster.Data.Rights select Regulus.Utility.Polygon.RotatePoint(p, new Vector2(), dir)).ToArray()
                     , new UnityEngine.Vector3(center.X , 0.5f , center.Y) , UnityEngine.Color.blue);
                 _Draw(poly ,0.5f , UnityEngine.Color.green);
 #endif
@@ -181,7 +190,7 @@ namespace Regulus.Project.GameProject1.Game.Play
                 {
                     if (individual.Id == _Player.Id)
                         continue;
-                    var collision = Regulus.CustomType.Polygon.Collision(poly, individual.Mesh, new Vector2());
+                    var collision = Regulus.Utility.Polygon.Collision(poly, individual.Mesh, new Vector2());
                     if (collision.Intersect)
                     {
                         var smash = _Caster.GetSmash();
@@ -251,11 +260,11 @@ namespace Regulus.Project.GameProject1.Game.Play
             }
         }
 
-        ACTOR_STATUS_TYPE ICastSkill.Id { get { return _Caster.Data.Id; } }
+        Remote.Property<ACTOR_STATUS_TYPE> ICastSkill.Id { get { return new Remote.Property<ACTOR_STATUS_TYPE>(_Caster.Data.Id); } }
 
-        ACTOR_STATUS_TYPE[] ICastSkill.Skills
+        Remote.Property<ACTOR_STATUS_TYPE[]> ICastSkill.Skills
         {
-            get { return _Caster.Data.Nexts; }
+            get { return new Remote.Property<ACTOR_STATUS_TYPE[]>(_Caster.Data.Nexts); }
         }
 
         void ICastSkill.Cast(ACTOR_STATUS_TYPE skill)

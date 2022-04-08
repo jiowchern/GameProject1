@@ -7,6 +7,6 @@ namespace Regulus.Project.GameProject1.Data
 {
     public interface IVersion
     {
-        string Number { get; }
+        Regulus.Remote.Property<string> Number { get; }
     }
 }

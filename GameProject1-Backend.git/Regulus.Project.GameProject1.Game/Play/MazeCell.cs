@@ -1,6 +1,6 @@
 ﻿using System.Linq;
 
-using Regulus.CustomType;
+using Regulus.Utility;
 
 namespace Regulus.Project.GameProject1.Game.Play
 {
@@ -11,7 +11,7 @@ namespace Regulus.Project.GameProject1.Game.Play
         public int Column;
 
         
-        public CustomType.Flag<MAZEWALL> Walls;
+        public Utility.Flag<MAZEWALL> Walls;
 
         public bool IsRoom()
         {

@@ -4,7 +4,7 @@ using System.ComponentModel;
 using System.Linq;
 
 using Regulus.Collection;
-using Regulus.CustomType;
+using Regulus.Utility;
 using Regulus.Extension;
 using Regulus.Project.GameProject1.Data;
 namespace Regulus.Project.GameProject1.Game.Play
@@ -38,6 +38,9 @@ namespace Regulus.Project.GameProject1.Game.Play
 
         public event Action<Guid, float> InjuredEvent;
 
+        readonly Remote.Property<Vector2> _MeshPosition;//this._Mesh.Center
+        
+
         private float _View
         {
             get
@@ -62,6 +65,8 @@ namespace Regulus.Project.GameProject1.Game.Play
         
         public Entity(EntityData data) : this(data , "" , new Bag() )
         {
+            Direction = new Remote.Property<float>();
+            _MeshPosition = new Remote.Property<Vector2>();
         }
 
 
@@ -72,6 +77,8 @@ namespace Regulus.Project.GameProject1.Game.Play
         
         public Entity(Polygon mesh) : this()
         {
+            Direction = new Remote.Property<float>();
+            _MeshPosition = new Remote.Property<Vector2>();
             SetBody(mesh);
             
         }
@@ -84,14 +91,14 @@ namespace Regulus.Project.GameProject1.Game.Play
             
             _RotationMesh = data.CollisionRotation;
             _EntityType = data.Name;
-
+            _MeshPosition = new Remote.Property<Vector2>();
             _SetBody(data.Mesh);
            
         }
 
         private Entity()
-        {                        
-
+        {
+            
 
             _Datas = Resource.Instance.SkillDatas;
 
@@ -141,9 +148,9 @@ namespace Regulus.Project.GameProject1.Game.Play
         }
 
 
-        ENTITY IVisible.EntityType { get { return _EntityType; } }
+        Regulus.Remote.Property<ENTITY> IVisible.EntityType { get { return new Regulus.Remote.Property<ENTITY> (_EntityType); } }
 
-        Guid IVisible.Id { get { return _Id; } }
+        Regulus.Remote.Property<Guid> IVisible.Id { get { return new Regulus.Remote.Property<Guid>(_Id); } }
 
         public float Strength(float val)
         {
@@ -175,15 +182,15 @@ namespace Regulus.Project.GameProject1.Game.Play
         }
       
 
-        string IVisible.Name
+        Remote.Property<string> IVisible.Name
         {
-            get { return _Name; }
+            get { return new Remote.Property<string>(_Name); }
         }
 
-        float IVisible.View { get { return _View; } }
+        Remote.Property<float> IVisible.View { get { return new Remote.Property<float> (_View); } }
 
-        ACTOR_STATUS_TYPE IVisible.Status {
-            get { return _Status;}
+        Remote.Property<ACTOR_STATUS_TYPE> IVisible.Status {
+            get { return new Remote.Property<ACTOR_STATUS_TYPE> (_Status);}
         }
 
 
@@ -211,7 +218,8 @@ namespace Regulus.Project.GameProject1.Game.Play
             remove { this._EnergyEvent -= value; }
         }
 
-        Vector2 IVisible.Position { get { return this._Mesh.Center; } }
+        
+        Remote.Property<Vector2> IVisible.Position { get { return _MeshPosition; } }
 
         void IVisible.QueryStatus()
         {
@@ -281,7 +289,7 @@ namespace Regulus.Project.GameProject1.Game.Play
 
         public Guid Id { get { return this._Id; } }
 
-        public float Direction { get; private set; }
+        public Remote.Property<float> Direction { get; private set; }
 
         public Equipment Equipment { get; set; }
 
@@ -333,6 +341,7 @@ namespace Regulus.Project.GameProject1.Game.Play
         {
             var offset = new Vector2(x, y) - this._Mesh.Center;
             this._Mesh.Offset(offset);
+            _MeshPosition.Value = _Mesh.Center;
             _UpdateBound();
         }
 
@@ -452,9 +461,9 @@ namespace Regulus.Project.GameProject1.Game.Play
 
         private void _AddDirection(float angle)
         {
-            Direction = (this.Direction + angle) % 360;
-            Direction += 360; 
-            Direction %= 360; 
+            Direction.Value = (this.Direction.Value + angle) % 360;
+            Direction.Value += 360; 
+            Direction.Value %= 360; 
         }
 
         private void _InvokeStatusEvent()
@@ -477,14 +486,14 @@ namespace Regulus.Project.GameProject1.Game.Play
         }
         public Vector2 GetDirectionVector()
         {
-            return this._ToVector(this.Direction);
+            return this._ToVector(this.Direction.Value);
         }
 
         public Vector2 GetVelocity(float delta_time)
         {            
                         
             var skill = _SkillOffsetVector * delta_time;
-            return this._ToVector(this.Direction) * delta_time * this._Speed + skill ;
+            return this._ToVector(this.Direction.Value) * delta_time * this._Speed + skill ;
         }
 
         public void TrunDirection(float delta_time)
@@ -707,7 +716,7 @@ namespace Regulus.Project.GameProject1.Game.Play
 
         public void SetSkillVelocity(float direction, float speed)
         {
-            var dir = ((Direction + direction) + 360.0f) % 360.0f;
+            var dir = ((Direction.Value + direction) + 360.0f) % 360.0f;
             _SkillOffsetVector = _ToVector(dir) * speed;
         }
 
@@ -790,6 +799,7 @@ namespace Regulus.Project.GameProject1.Game.Play
             _Mesh = body.Clone();
             _Bound = this._BuildBound(this._Mesh);
             _DetectionRange = 1.0f + _Mesh.Points.ToRect().Width;
+            _MeshPosition.Value = _Mesh.Center;
         }
     }
 }

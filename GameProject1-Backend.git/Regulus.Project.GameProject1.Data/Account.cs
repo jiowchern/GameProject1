@@ -5,7 +5,6 @@ using System.Linq;
 
 
 
-using Regulus.CustomType;
 using Regulus.Utility;
 
 namespace Regulus.Project.GameProject1.Data

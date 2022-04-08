@@ -3,9 +3,13 @@ using System.Linq;
 using System.Collections.Generic;
 
 using Regulus.Collection;
-using Regulus.CustomType;
+using Regulus.Utility;
 using Regulus.Project.GameProject1.Data;
 using Regulus.Extension;
+
+namespace Regulus.Collection
+{
+}
 
 namespace Regulus.Project.GameProject1.Game.Play
 {
@@ -15,7 +19,7 @@ namespace Regulus.Project.GameProject1.Game.Play
         {
             public Vector2 Center;
 
-            public CustomType.Flag<MAZEWALL> Walls;
+            public Utility.Flag<MAZEWALL> Walls;
         }
         public class Visible : IQuadObject
         {

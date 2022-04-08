@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using Regulus.Extension;
-using Regulus.CustomType;
+using Regulus.Utility;
 using Regulus.Project.GameProject1.Data;
 
 namespace Regulus.Project.GameProject1.Game.Play
@@ -90,7 +90,7 @@ namespace Regulus.Project.GameProject1.Game.Play
 
         }
 
-        private Regulus.CustomType.Polygon.CollisionResult _Collide(IIndividual individual, Polygon polygon, Vector2 velocity)
+        private Regulus.Utility.Polygon.CollisionResult _Collide(IIndividual individual, Polygon polygon, Vector2 velocity)
         {
             var result = Polygon.Collision(polygon, individual.Mesh, velocity);
             return result;

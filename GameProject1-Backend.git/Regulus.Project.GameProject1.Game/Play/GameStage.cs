@@ -6,7 +6,7 @@ using System.Linq;
 
 
 using Regulus.Collection;
-using Regulus.CustomType;
+using Regulus.Utility;
 using Regulus.Project.GameProject1.Data;
 using Regulus.Remote;
 using Regulus.Utility;
@@ -44,11 +44,16 @@ namespace Regulus.Project.GameProject1.Game.Play
         public event Action<string> TransmitEvent;
 
         private readonly IMapGate _Gate;
-
-        
+        private readonly System.Collections.Generic.List<ISoul> _BroadcastSouls;
+        UnbindHelper _UnbindHelper;
+        Regulus.Remote.Property<float> _PlayerHealth;//_Player.Health(0)
+        Regulus.Remote.Property<float> _PlayerStrength;//_Player.Strength(0)
 
         public GameStage(IBinder binder, IMapFinder map , IMapGate gate, Entity entity)
         {
+            _UnbindHelper = new UnbindHelper(binder);
+            _PlayerHealth = new Property<float>();
+            _PlayerStrength = new Property<float>();
             _Gate = gate;
             _Map = map;
             _Binder = binder;
@@ -72,23 +77,21 @@ namespace Regulus.Project.GameProject1.Game.Play
             
             _DifferenceNoticer.Set(new IIndividual[0]) ;
             _DifferenceNoticer.JoinEvent -= this._BroadcastJoin;
-            _DifferenceNoticer.LeftEvent -= this._BroadcastLeft;            
+            _DifferenceNoticer.LeaveEvent -= this._BroadcastLeft;
 
-            _Binder.Unbind<IEmotion>(this);
-            _Binder.Unbind<IDevelopActor>(_Player);            
-            _Binder.Unbind<IPlayerProperys>(this);            
+            _UnbindHelper.Release();
             _Gate.Left(_Player);
         }
 
         void IStatus.Enter()
         {
             this._DifferenceNoticer.JoinEvent += this._BroadcastJoin;
-            this._DifferenceNoticer.LeftEvent += this._BroadcastLeft;
+            this._DifferenceNoticer.LeaveEvent += this._BroadcastLeft;
 
             this._Gate.Join(this._Player);
-            this._Binder.Bind<IPlayerProperys>(this);                        
-            _Binder.Bind<IDevelopActor>(_Player);
-            _Binder.Bind<IEmotion>(this);
+            _UnbindHelper += this._Binder.Bind<IPlayerProperys>(this);
+            _UnbindHelper += _Binder.Bind<IDevelopActor>(_Player);
+            _UnbindHelper += _Binder.Bind<IEmotion>(this);
             _ToSurvival();
 
             if (_Behavior != null)
@@ -101,6 +104,10 @@ namespace Regulus.Project.GameProject1.Game.Play
         {
             if (_UpdateTimeCounter.Second < _UpdateTime)
                 return;
+
+            _PlayerHealth.Value = _Player.Health(0);
+            _PlayerStrength.Value = _Player.Strength(0);    
+
             var deltaTime = this._GetDeltaTime();
             _Machine.Update();
             _Updater.Working();
@@ -169,7 +176,11 @@ namespace Regulus.Project.GameProject1.Game.Play
         {
             foreach (var controller in controllers)
             {
-                this._Binder.Unbind<IVisible>(controller);
+                var soul = _BroadcastSouls.Find(s => s.Instance == controller);
+                if (soul == null)
+                    continue;
+                _BroadcastSouls.Remove(soul);
+                this._Binder.Unbind(soul);
             }
         }
 
@@ -177,7 +188,8 @@ namespace Regulus.Project.GameProject1.Game.Play
         {
             foreach (var controller in controllers)
             {
-                this._Binder.Bind<IVisible>(controller);
+                var soul = this._Binder.Bind<IVisible>(controller);
+                _BroadcastSouls.Add(soul);
             }
         }
 
@@ -212,21 +224,23 @@ namespace Regulus.Project.GameProject1.Game.Play
             _Player.Talk(message);
         }
 
-        string IPlayerProperys.Realm { get { return _Gate.Name; } }
+        Regulus.Remote.Property<string> IPlayerProperys.Realm { get { return new Regulus.Remote.Property<string>(_Gate.Name); } }
 
-        Guid IPlayerProperys.Id
+        Regulus.Remote.Property<Guid> IPlayerProperys.Id
         {
-            get { return _Player.Id; }
+            get { return new Regulus.Remote.Property<Guid> (_Player.Id); }
         }
 
-        float IPlayerProperys.Strength
+        
+        Regulus.Remote.Property<float> IPlayerProperys.Strength
         {
-            get { return _Player.Strength(0); }
+            get { return _PlayerStrength; }
         }
 
-        float IPlayerProperys.Health
+        
+        Regulus.Remote.Property<float> IPlayerProperys.Health
         {
-            get { return _Player.Health(0); }
+            get { return _PlayerHealth; }
         }
     }
 }

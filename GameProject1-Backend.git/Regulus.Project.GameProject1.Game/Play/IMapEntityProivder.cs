@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-using Regulus.CustomType;
+using Regulus.Utility;
 
 namespace Regulus.Project.GameProject1.Game.Play
 {
