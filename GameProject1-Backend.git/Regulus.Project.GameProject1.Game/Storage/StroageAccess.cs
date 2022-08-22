@@ -18,11 +18,15 @@ namespace Regulus.Project.GameProject1.Game.Storage
 
         private readonly IStorage _Storage;
 
+        
+        readonly System.Collections.Generic.Dictionary<System.Guid, Play.UnbindHelper> _UnbindHelper;
+
         public StroageAccess(IBinder binder, Account account, IStorage storage)
         {
             this._Binder = binder;
             this._Account = account;
             this._Storage = storage;
+            _UnbindHelper = new System.Collections.Generic.Dictionary<System.Guid, Play.UnbindHelper>();
         }
 
         void IQuitable.Quit()
@@ -56,35 +60,31 @@ namespace Regulus.Project.GameProject1.Game.Storage
 
         private void _Attach(Account account)
         {
-            this._Binder.Bind<IStorageCompetences>(this);
+            var binder = new Play.UnbindHelper(_Binder);
+            _UnbindHelper.Add(account.Id , binder);
+            binder += this._Binder.Bind<IStorageCompetences>(this);
 
             if (account.HasCompetnce(Account.COMPETENCE.ACCOUNT_FINDER))
             {
-                this._Binder.Bind<IAccountFinder>(this._Storage);
-                this._Binder.Bind<IGameRecorder>(this._Storage);
+                binder += this._Binder.Bind<IAccountFinder>(this._Storage);
+                binder += this._Binder.Bind<IGameRecorder>(this._Storage);
             }
 
             if (account.HasCompetnce(Account.COMPETENCE.ACCOUNT_MANAGER))
             {
-                this._Binder.Bind<IAccountManager>(this._Storage);
+                binder += this._Binder.Bind<IAccountManager>(this._Storage);
             }
 
         }
 
         private void _Detach(Account account)
         {
-            if (account.HasCompetnce(Account.COMPETENCE.ACCOUNT_FINDER))
-            {
-                this._Binder.Unbind<IAccountFinder>(this._Storage);
-                this._Binder.Unbind<IGameRecorder>(this._Storage);
-            }
+            _UnbindHelper.TryGetValue(account.Id , out var binder);
+            _UnbindHelper.Remove(account.Id);
+            binder.Release();
 
-            if (account.HasCompetnce(Account.COMPETENCE.ACCOUNT_MANAGER))
-            {
-                this._Binder.Unbind<IAccountManager>(this._Storage);
-            }
 
-            this._Binder.Unbind<IStorageCompetences>(this);
+
         }
     }
 }

@@ -6,10 +6,10 @@ using Regulus.Utility;
 using Regulus.Extension;
 using Regulus.Project.GameProject1.Data;
 using Regulus.Remote;
-using Regulus.Utility;
 
 namespace Regulus.Project.GameProject1.Game.Play
 {
+
     internal class AidStatus : IStatus
     {
         private readonly Guid _ItemId;

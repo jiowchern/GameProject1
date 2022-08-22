@@ -5,11 +5,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Regulus.Remote" Version="0.1.11.10-alpha" />
-    <PackageReference Include="Regulus.Remote.Tools.Protocol.Sources" Version="0.0.0.13-alpha">
+    <PackageReference Include="Regulus.Remote" Version="0.1.11.12" />
+    <PackageReference Include="Regulus.Remote.Tools.Protocol.Sources" Version="0.0.0.15">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="Regulus.Serialization" Version="0.1.11.10-alpha" />
+    <PackageReference Include="Regulus.Serialization" Version="0.1.11.12" />
   </ItemGroup>
 </Project>

@@ -5,9 +5,9 @@ using System.Linq;
 
 using Regulus.BehaviourTree;
 using Regulus.Utility;
-using Regulus.Extension;
+
 using Regulus.Project.GameProject1.Data;
-using Regulus.Utility;
+
 
 
 using Vector2 = Regulus.Utility.Vector2;
@@ -856,7 +856,7 @@ namespace Regulus.Project.GameProject1.Game.Play
             if(target == null)
                 return TICKRESULT.FAILURE;
 
-            if(target.Position.DistanceTo(_Entiry.GetPosition()) <= distance || distance <= 0f)
+            if(target.Position.Value.DistanceTo(_Entiry.GetPosition()) <= distance || distance <= 0f)
                 return TICKRESULT.SUCCESS;
 
             return TICKRESULT.FAILURE;
@@ -1274,7 +1274,7 @@ namespace Regulus.Project.GameProject1.Game.Play
         {
             _CastSkill = obj;
             _CastSkill.HitNextsEvent += _AddSkills;
-            _UsableSkills.AddRange(_CastSkill.Skills);
+            _UsableSkills.AddRange(_CastSkill.Skills.Value);
         }
 
         private void _AddSkills(ACTOR_STATUS_TYPE[] obj)

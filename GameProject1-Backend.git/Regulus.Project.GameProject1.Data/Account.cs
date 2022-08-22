@@ -9,7 +9,6 @@ using Regulus.Utility;
 
 namespace Regulus.Project.GameProject1.Data
 {
-
     public class Account
     {
         public enum COMPETENCE

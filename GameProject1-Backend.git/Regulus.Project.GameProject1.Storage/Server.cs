@@ -39,9 +39,9 @@ namespace Regulus.Project.GameProject1.Storage
             _BinderProvider = _Center;
         }
 
-        void IBinderProvider.AssignBinder(IBinder binder , object state)
+        void IBinderProvider.AssignBinder(IBinder binder )
         {
-            _BinderProvider.AssignBinder(binder,state);
+            _BinderProvider.AssignBinder(binder);
         }
 
         

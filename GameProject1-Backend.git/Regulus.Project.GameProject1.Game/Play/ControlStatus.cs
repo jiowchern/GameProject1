@@ -7,6 +7,7 @@ using Regulus.Utility;
 
 namespace Regulus.Project.GameProject1.Game.Play
 {
+    
     internal class ControlStatus : Regulus.Utility.IStatus
     {
         private readonly IBinder _Binder;
@@ -18,12 +19,14 @@ namespace Regulus.Project.GameProject1.Game.Play
         private readonly StatusMachine _Status;
 
         public event Action StunEvent;
+        
 
         private Regulus.Utility.TimeCounter _TimeCounter;
-
+        UnbindHelper _UnbindHelper;
 
         public ControlStatus(IBinder binder, Entity player, IMapFinder map)
         {
+            _UnbindHelper = new UnbindHelper(binder);
             _Binder = binder;
             _Player = player;            
             _Map = map;
@@ -82,8 +85,8 @@ namespace Regulus.Project.GameProject1.Game.Play
         
         void IStatus.Enter()
         {
-            _Binder.Bind<IEquipmentNotifier>(_Player.Equipment);
-            _Binder.Bind<IBagNotifier>(_Player.Bag);
+            _UnbindHelper+= _Binder.Bind<IEquipmentNotifier>(_Player.Equipment);
+            _UnbindHelper += _Binder.Bind<IBagNotifier>(_Player.Bag);
             _Player.ResetProperty();
             _ToDone();
         }
@@ -91,8 +94,7 @@ namespace Regulus.Project.GameProject1.Game.Play
         void IStatus.Leave()
         {
             _Status.Termination();
-            _Binder.Unbind<IBagNotifier>(_Player.Bag);
-            _Binder.Unbind<IEquipmentNotifier>(_Player.Equipment);
+            _UnbindHelper.Release();            
         }
 
         void IStatus.Update()

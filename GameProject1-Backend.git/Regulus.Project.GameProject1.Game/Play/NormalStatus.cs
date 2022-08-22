@@ -27,23 +27,22 @@ namespace Regulus.Project.GameProject1.Game.Play
         private readonly Regulus.Utility.TimeCounter _TimeCounter;
 
         private float _UpdateAllItemTime;
+        UnbindHelper _UnbindHelper;
 
         public NormalStatus(IBinder binder, Entity player) 
         {
             _TimeCounter = new TimeCounter();
             _Binder = binder;
             _Player = player;
-
+            _UnbindHelper = new UnbindHelper(_Binder);
             _MoveController = new MoveController(_Player);
         }
         
 
         public override void Leave()
         {
-            _Binder.Unbind<INormalSkill>(this);
-            _Binder.Unbind<IMoveController>(_MoveController);
+            _UnbindHelper.Release();
             
-            _Binder.Unbind<IInventoryController>(this);
         }
 
         public override void Update()
@@ -54,9 +53,9 @@ namespace Regulus.Project.GameProject1.Game.Play
 
         public override void Enter()
         {
-            _Binder.Bind<IInventoryController>(this);            
-            _Binder.Bind<IMoveController>(_MoveController);
-            _Binder.Bind<INormalSkill>(this);
+            _UnbindHelper+= _Binder.Bind<IInventoryController>(this);
+            _UnbindHelper+=_Binder.Bind<IMoveController>(_MoveController);
+            _UnbindHelper+=_Binder.Bind<INormalSkill>(this);
 
             _Player.Normal();
         }

@@ -17,12 +17,13 @@ namespace Regulus.Project.GameProject1.Game.Play
         public event Action DoneEvent;
 
         private ItemFormula[] _Formulas;
-        
-        
+
+        UnbindHelper _UnbindHelper;
 
         public MakeStatus(IBinder binder, Entity player)
         {            
-            _Binder = binder;   
+            _Binder = binder;
+            _UnbindHelper = new UnbindHelper(binder);
             _Player = player;            
         }
 
@@ -30,14 +31,14 @@ namespace Regulus.Project.GameProject1.Game.Play
         {
             _Player.Make();
             _Formulas = _Player.GetFormulas();
-            
-            _Binder.Bind<IMakeSkill>(this);
+
+            _UnbindHelper += _Binder.Bind<IMakeSkill>(this);
             
         }
 
         void IStatus.Leave()
         {
-            _Binder.Unbind<IMakeSkill>(this);
+            _UnbindHelper.Release();            
         }
 
         void IStatus.Update()

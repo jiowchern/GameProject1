@@ -5,8 +5,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Regulus.Remote.Client" Version="0.1.11.10-alpha" />
-    <PackageReference Include="Regulus.Remote.Standalone" Version="0.1.11.10-alpha" />
+    <PackageReference Include="Regulus.Remote.Client" Version="0.1.11.12" />
+    <PackageReference Include="Regulus.Remote.Standalone" Version="0.1.11.12" />
   </ItemGroup>
 
   <ItemGroup>
