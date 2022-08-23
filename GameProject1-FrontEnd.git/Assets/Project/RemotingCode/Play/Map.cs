@@ -73,7 +73,7 @@ namespace Regulus.Project.GameProject1.Game.Play
             _Random = Regulus.Utility.Random.Instance;
             _EntranceSet = new List<Visible>();
             this._Set = new Dictionary<Guid, Visible>();
-            this._QuadTree = new QuadTree<Visible>(new Size(2, 2), 100);
+            this._QuadTree = new QuadTree<Visible>(new Size(2, 2), 4);
         }
 
         public Map(Regulus.Utility.IRandom random) : this()

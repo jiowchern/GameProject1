@@ -3,7 +3,7 @@ mkdir Assets\Project\Plugins\Backend
 
 rem copy ..\GameProject1-Backend\Game\bin\Debug\ Assets\Project\Plugins\Backend
 copy ..\GameProject1-Backend.git\Data\bin\Debug\*.* Assets\Project\Plugins\Backend
-copy ..\GameProject1-Backend.git\PlayUser\bin\Debug\*.* Assets\Project\Plugins\Backend
+
 rem copy ..\GameProject1-Backend\PlayUser\bin\Debug\*.* Assets\Project\Plugins\Backend
 
 
