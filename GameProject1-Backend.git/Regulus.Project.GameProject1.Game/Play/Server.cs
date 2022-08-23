@@ -8,21 +8,16 @@ using Regulus.Remote;
 using Regulus.Utility;
 using System.Threading.Tasks;
 
-namespace Regulus.Project.GameProject1.Play
+namespace Regulus.Project.GameProject1.Game.Play
 {
 
     public class Server : Remote.IEntry , System.IDisposable
     {
         private readonly Utility.LogFileRecorder _LogRecorder;
-
-        
-
         private readonly Utility.Updater _Updater;
         private readonly System.Threading.Tasks.Task _Loop;
         volatile bool _EnableLoop;
         private readonly Center _Center;
-
-        
 
         public Server()
         {
@@ -58,8 +53,6 @@ namespace Regulus.Project.GameProject1.Play
 
         }
 
-
-
         void _Shutdown()
         {
             _EnableLoop = false;
@@ -77,13 +70,10 @@ namespace Regulus.Project.GameProject1.Play
 
             AppDomain.CurrentDomain.UnhandledException += this.CurrentDomain_UnhandledException;
             Utility.Singleton<Utility.Log>.Instance.RecordEvent += this._LogRecorder.Record;
-
-          
+      
             this._BuildUser();
             this._LoadData();
-            
-            
-
+      
             _EnableLoop = true;
             _Loop.Start();
         }

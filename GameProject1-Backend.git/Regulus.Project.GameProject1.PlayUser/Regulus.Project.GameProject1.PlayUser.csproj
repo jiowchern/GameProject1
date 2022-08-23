@@ -14,7 +14,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Regulus.Project.GameProject1.Data\Regulus.Project.GameProject1.Data.csproj" />
+    
+	  <ProjectReference Include="..\Regulus.Project.GameProject1.Game\Regulus.Project.GameProject1.Game.csproj" />
+    
   </ItemGroup>
 
 </Project>

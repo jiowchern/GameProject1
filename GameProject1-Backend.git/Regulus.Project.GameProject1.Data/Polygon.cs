@@ -10,6 +10,7 @@ using System.Xml.Serialization;
 
 namespace Regulus.Utility
 {
+    [Serializable]
     public class Polygon : ICloneable
     {
         public struct CollisionResult
