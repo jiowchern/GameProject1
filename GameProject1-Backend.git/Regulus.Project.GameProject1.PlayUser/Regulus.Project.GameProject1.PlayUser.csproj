@@ -1,12 +1,16 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+      <OutputType>Exe</OutputType>
+	  <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Regulus.Remote.Client" Version="0.1.11.12" />
     <PackageReference Include="Regulus.Remote.Standalone" Version="0.1.11.12" />
+    <PackageReference Include="System.CommandLine" Version="2.0.0-beta1.20253.1" />
+	<PackageReference Include="System.CommandLine.Rendering" Version="0.3.0-alpha.20253.1" />
+	<PackageReference Include="System.CommandLine.DragonFruit" Version="0.3.0-alpha.20253.1" />
   </ItemGroup>
 
   <ItemGroup>
